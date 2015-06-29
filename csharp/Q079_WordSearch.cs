@@ -1,14 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a 2D board and a word, find if the word exists in the grid.
 
 // The word can be constructed from letters of sequentially adjacent cell,
-// where "adjacent" cells are those horizontally or vertically neighboring. 
+// where "adjacent" cells are those horizontally or vertically neighboring.
 // The same letter cell may not be used more than once.
 
 // For example,
@@ -25,7 +23,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q079_WordSearch
     {
         public bool Exist(string[] board, string word)

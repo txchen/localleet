@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a linked list, swap every two adjacent nodes and return its head.
@@ -14,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q024_SwapNodesinPairs
     {
         public ListNode<int> SwapPairs(ListNode<int> head)

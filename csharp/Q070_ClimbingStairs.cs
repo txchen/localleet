@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // You are climbing a stair case. It takes n steps to reach to the top.
@@ -11,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q070_ClimbingStairs
     {
         public int ClimbStairs(int n)

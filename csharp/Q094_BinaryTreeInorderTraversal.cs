@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a binary tree, return the inorder traversal of its nodes' values.
@@ -21,7 +19,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q094_BinaryTreeInorderTraversal
     {
         public int[] InorderTraversal(BinaryTree root)

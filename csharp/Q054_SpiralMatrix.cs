@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
@@ -19,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q054_SpiralMatrix
     {
         public int[] SpiralOrder(int[][] matrix)

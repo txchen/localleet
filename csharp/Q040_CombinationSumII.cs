@@ -1,11 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
-// Given a collection of candidate numbers (C) and a target number (T), 
+// Given a collection of candidate numbers (C) and a target number (T),
 // find all unique combinations in C where the candidate numbers sums to T.
 
 // Each number in C may only be used once in the combination.
@@ -15,16 +13,16 @@ using Xunit;
 // All numbers (including target) will be positive integers.
 // Elements in a combination (a1, a2, � , ak) must be in non-descending order. (ie, a1 ? a2 ? � ? ak).
 // The solution set must not contain duplicate combinations.
-// For example, given candidate set 10,1,2,7,6,1,5 and target 8, 
-// A solution set is: 
-// [1, 7] 
-// [1, 2, 5] 
-// [2, 6] 
-// [1, 1, 6] 
+// For example, given candidate set 10,1,2,7,6,1,5 and target 8,
+// A solution set is:
+// [1, 7]
+// [1, 2, 5]
+// [2, 6]
+// [1, 1, 6]
 
 namespace LocalLeet
 {
-    
+
     public class Q040_CombinationSumII
     {
         public int[][] CombinationSum2(int[] candidates, int target)

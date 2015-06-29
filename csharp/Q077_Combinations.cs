@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
@@ -20,7 +18,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q077_Combinations
     {
         public int[][] Combinations(int n, int k)
@@ -30,7 +28,7 @@ namespace LocalLeet
             ComboRecur(n, k, 0, 1, result, tmp);
             return result.ToArray();
         }
-        
+
         private void ComboRecur(int n, int k, int level, int startNum, List<int[]> result, int[] tmp)
         {
             if (k == level)

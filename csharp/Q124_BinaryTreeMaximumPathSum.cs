@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a binary tree, find the maximum path sum.
@@ -19,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q124_BinaryTreeMaximumPathSum
     {
         public int MaxPathSum(BinaryTree root)

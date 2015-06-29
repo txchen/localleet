@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
-// Given a sorted linked list, delete all nodes that have duplicate numbers, 
+// Given a sorted linked list, delete all nodes that have duplicate numbers,
 // leaving only distinct numbers from the original list.
 
 // For example,
@@ -14,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q082_RemoveDuplicatesfromSortedListII
     {
         public ListNode<int> DeleteDuplicatesII(ListNode<int> head)

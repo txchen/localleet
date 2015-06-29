@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // Implement regular expression matching with support for '.' and '*'.
 
@@ -22,7 +20,6 @@ using System.Threading.Tasks;
 // isMatch("aa", ".*") ? true
 // isMatch("ab", ".*") ? true
 // isMatch("aab", "c*a*b") ? true
-
 
 namespace LocalLeet
 {

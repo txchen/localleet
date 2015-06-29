@@ -1,12 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
-   
+
 // For example:
 // Given the below binary tree and sum = 22,
 //               5
@@ -17,7 +15,7 @@ using Xunit;
 //          /  \    / \
 //         7    2  5   1
 // return
-   
+
 // [
 //    [5,4,11,2],
 //    [5,8,4,5]
@@ -25,7 +23,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q113_PathSumII
     {
         public int[][] PathSum(BinaryTree root, int sum)

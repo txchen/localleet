@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a sorted array of integers, find the starting and ending position of a given target value.
@@ -17,7 +15,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q034_SearchforaRange
     {
         public int[] SearchRange(int[] A, int target)

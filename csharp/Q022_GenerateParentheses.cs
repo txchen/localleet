@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
@@ -13,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q022_GenerateParentheses
     {
         public string[] GenerateParenthesis(int n)

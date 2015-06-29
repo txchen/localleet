@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a binary tree, flatten it to a linked list in-place.
@@ -30,7 +28,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q114_FlattenBinaryTreetoLinkedList
     {
         public BinaryTree Flatten(BinaryTree root)

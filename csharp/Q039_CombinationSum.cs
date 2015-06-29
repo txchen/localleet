@@ -1,11 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
-// Given a set of candidate numbers (C) and a target number (T), 
+// Given a set of candidate numbers (C) and a target number (T),
 // find all unique combinations in C where the candidate numbers sums to T.
 
 // The same repeated number may be chosen from C unlimited number of times.
@@ -15,14 +13,14 @@ using Xunit;
 // All numbers (including target) will be positive integers.
 // Elements in a combination (a1, a2, � , ak) must be in non-descending order. (ie, a1 ? a2 ? � ? ak).
 // The solution set must not contain duplicate combinations.
-// For example, given candidate set 2,3,6,7 and target 7, 
-// A solution set is: 
-// [7] 
-// [2, 2, 3] 
+// For example, given candidate set 2,3,6,7 and target 7,
+// A solution set is:
+// [7]
+// [2, 2, 3]
 
 namespace LocalLeet
 {
-    
+
     public class Q039_CombinationSum
     {
         public int[][] CombinationSum(int[] candidates, int target)
@@ -43,7 +41,7 @@ namespace LocalLeet
                 return new List<int[]>();
             }
             List<int[]> answer = new List<int[]>();
-            // take current 
+            // take current
             int cur = candidates[startingIndex];
             var nextAnswers = CombinationSumInt(candidates, startingIndex, target - cur);
             nextAnswers.ForEach(a => answer.Add(new int[] { cur }.Concat(a).ToArray()));

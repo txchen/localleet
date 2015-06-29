@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a binary tree, determine if it is a valid binary search tree (BST).
@@ -15,7 +13,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q098_ValidateBinarySearchTree
     {
         public bool IsValidBST(BinaryTree root)

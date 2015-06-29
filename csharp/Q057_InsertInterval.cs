@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
@@ -19,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q057_InsertInterval
     {
         public int[][] Insert(int[][] intervals, int[] newInterval)

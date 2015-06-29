@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given numRows, generate the first numRows of Pascal's triangle.
@@ -20,7 +18,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q118_PascalTriangle
     {
         public int[][] Generate(int numRows)

@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // Given n non-negative integers a1, a2, ..., an,
 // where each represents a point at coordinate (i, ai). n vertical lines are drawn

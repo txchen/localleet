@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given two binary strings, return their sum (also a binary string).
@@ -14,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q067_AddBinary
     {
         public string AddBinary(string a, string b)

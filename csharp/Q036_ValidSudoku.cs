@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
@@ -11,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q036_ValidSudoku
     {
         public bool IsValidSudoku(int[,] board)

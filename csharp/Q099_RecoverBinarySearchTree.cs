@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Two elements of a binary search tree (BST) are swapped by mistake.
@@ -14,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q099_RecoverBinarySearchTree
     {
         public BinaryTree RecoverTree(BinaryTree root)

@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given an array of non-negative integers, you are initially positioned at the first index of the array.
@@ -18,7 +16,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q045_JumpGameII
     {
         public int Jump(int[] input)

@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // You are given an n x n 2D matrix representing an image.
@@ -14,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q048_RotateImage
     {
         public int[][] Rotate(int[][] matrix)

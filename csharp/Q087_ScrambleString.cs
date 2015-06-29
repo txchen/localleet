@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a string s1, we may represent it as a binary tree by partitioning it to two non-empty substrings recursively.
@@ -44,7 +42,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q087_ScrambleString
     {
         public bool IsScramble(string s1, string s2)

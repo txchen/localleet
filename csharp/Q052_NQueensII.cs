@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Follow up for N-Queens problem.
@@ -11,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q052_NQueensII
     {
         public int SolveNQueensII(int n)

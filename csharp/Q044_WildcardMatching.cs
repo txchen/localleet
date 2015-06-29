@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // '?' Matches any single character.
@@ -24,7 +22,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q044_WildcardMatching
     {
         public bool IsMatch(string input, string pattern)

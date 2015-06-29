@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // Given a string, find the length of the longest substring without repeating characters.
 // For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3.

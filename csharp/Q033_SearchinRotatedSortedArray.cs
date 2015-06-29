@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Suppose a sorted array is rotated at some pivot unknown to you beforehand.
@@ -15,7 +13,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q033_SearchinRotatedSortedArray
     {
         public int Search(int[] a, int target)

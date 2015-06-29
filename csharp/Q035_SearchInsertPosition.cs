@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a sorted array and a target value, return the index if the target is found.
@@ -18,7 +16,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q035_SearchInsertPosition
     {
         public int SearchInsert(int[] input, int target)

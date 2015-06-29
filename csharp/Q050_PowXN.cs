@@ -1,15 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Implement pow(x, n).
 
 namespace LocalLeet
 {
-    
+
     public class Q050_PowXN
     {
         public double Pow(double x, int n)

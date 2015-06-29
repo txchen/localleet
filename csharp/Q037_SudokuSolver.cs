@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Write a program to solve a Sudoku puzzle by filling the empty cells.
@@ -13,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q037_SudokuSolver
     {
         public int[,] SolveSudoku(int[,] board)

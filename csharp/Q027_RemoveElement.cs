@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given an array and a value, remove all instances of that value in place and return the new length.
@@ -11,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q027_RemoveElement
     {
         int[] RemoveElement(int[] a, int toRemove)

@@ -1,15 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
 namespace LocalLeet
 {
-    
+
     public class Q023_MergekSortedLists
     {
         public ListNode<int> MergeKLists(ListNode<int>[] lists)

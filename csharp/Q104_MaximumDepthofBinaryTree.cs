@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a binary tree, find its maximum depth.
@@ -11,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q104_MaximumDepthofBinaryTree
     {
         public int MaxDepth(BinaryTree root)

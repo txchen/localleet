@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
@@ -15,7 +13,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q073_SetMatrixZeroes
     {
         public int[][] SetZeroes(int[][] matrix)

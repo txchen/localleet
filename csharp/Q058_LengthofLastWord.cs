@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
@@ -11,13 +9,13 @@ using Xunit;
 
 // Note: A word is defined as a character sequence consists of non-space characters only.
 
-// For example, 
+// For example,
 // Given s = "Hello World",
 // return 5.
 
 namespace LocalLeet
 {
-    
+
     public class Q058_LengthofLastWord
     {
         public int LengthOfLastWord(string input)

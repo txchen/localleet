@@ -1,8 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // The n-queens puzzle is the problem of placing n queens on an n�n chessboard such that no two queens attack each other.
@@ -27,7 +25,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q051_NQueens
     {
         public string[][] SolveNQueens(int n)

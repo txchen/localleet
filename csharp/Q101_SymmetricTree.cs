@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
@@ -26,7 +24,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q101_SymmetricTree
     {
         public bool IsSymmetric(BinaryTree root)

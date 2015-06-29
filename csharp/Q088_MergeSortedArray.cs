@@ -1,19 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given two sorted integer arrays A and B, merge B into A as one sorted array.
 
 // Note:
-// You may assume that A has enough space to hold additional elements from B. 
+// You may assume that A has enough space to hold additional elements from B.
 // The number of elements initialized in A and B are m and n respectively.
 
 namespace LocalLeet
 {
-    
+
     public class Q088_MergeSortedArray
     {
         public int[] Merge(int[] a, int[] b)
@@ -45,7 +43,7 @@ namespace LocalLeet
                 if (a[ia] > b[ib])
                 {
                     a[i--] = a[ia--];
-                } 
+                }
                 else
                 {
                     a[i--] = b[ib--];

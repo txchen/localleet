@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a list, rotate the list to the right by k places, where k is non-negative.
@@ -13,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q061_RotateList
     {
         public ListNode<int> RotateRight(ListNode<int> head, int n)
@@ -54,7 +52,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return RotateRight(input.GetToken(0).ToListNode<int>(), 
+            return RotateRight(input.GetToken(0).ToListNode<int>(),
                 input.GetToken(1).ToInt()).SerializeListNode();
         }
 

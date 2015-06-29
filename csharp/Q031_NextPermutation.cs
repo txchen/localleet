@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
@@ -18,7 +16,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q031_NextPermutation
     {
         public int[] NextPermutation(int[] num)

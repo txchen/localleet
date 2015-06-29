@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
@@ -21,7 +19,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q074_Searcha2DMatrix
     {
         public bool SearchMatrix(int[][] matrix, int target)

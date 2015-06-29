@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a collection of numbers, return all possible permutations.
@@ -13,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q046_Permutations
     {
         public int[][] Permute(int[] num)

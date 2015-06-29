@@ -1,20 +1,18 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 
-// The robot can only move either down or right at any point in time. 
+// The robot can only move either down or right at any point in time.
 // The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
 
 // How many possible unique paths are there?
 
 namespace LocalLeet
 {
-    
+
     public class Q062_UniquePaths
     {
         public int UniquePaths(int m, int n)

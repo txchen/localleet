@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given n, how many structurally unique BST's (binary search trees) that store values 1...n?
@@ -18,7 +16,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q096_UniqueBinarySearchTrees
     {
         public int NumTrees(int n)

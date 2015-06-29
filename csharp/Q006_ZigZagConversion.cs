@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this:
 // (you may want to display this pattern in a fixed font for better legibility)

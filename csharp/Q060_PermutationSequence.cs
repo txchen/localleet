@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // The set [1,2,3,��,n] contains a total of n! unique permutations.
@@ -22,7 +20,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q060_PermutationSequence
     {
         public string GetPermutation(int n, int k)

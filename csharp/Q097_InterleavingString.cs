@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given s1, s2, s3, find whether s3 is formed by the interleaving of s1 and s2.
@@ -17,7 +15,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q097_InterleavingString
     {
         public bool IsInterleave(string s1, string s2, string s3)

@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
@@ -19,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q059_SpiralMatrixII
     {
         public int[][] GenerateMatrix(int n)
@@ -33,7 +31,7 @@ namespace LocalLeet
             int current = 1;
             while (left < right)
             {
-                // top 
+                // top
                 for (int i = left; i < right; i++)
                 {
                     answer[top][i] = current++;

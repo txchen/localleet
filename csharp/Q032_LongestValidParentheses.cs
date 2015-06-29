@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
-// Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) 
+// Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed)
 // parentheses substring.
 
 // For "(()", the longest valid parentheses substring is "()", which has length = 2.
@@ -14,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q032_LongestValidParentheses
     {
         public int LongestValidParentheses(string s)

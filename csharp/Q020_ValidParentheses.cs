@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.

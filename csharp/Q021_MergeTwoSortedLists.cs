@@ -1,16 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
-// Merge two sorted linked lists and return it as a new list. 
+// Merge two sorted linked lists and return it as a new list.
 // The new list should be made by splicing together the nodes of the first two lists.
 
 namespace LocalLeet
 {
-    
+
     public class Q021_MergeTwoSortedLists
     {
         public ListNode<int> MergeTwoLists(ListNode<int> l1, ListNode<int> l2)

@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
@@ -19,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q076_MinimumWindowSubstring
     {
         public string MinWindow(string src, string target)

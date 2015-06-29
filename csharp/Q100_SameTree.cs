@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given two binary trees, write a function to check if they are equal or not.
@@ -11,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q100_SameTree
     {
         public bool IsSameTree(BinaryTree t1, BinaryTree t2)

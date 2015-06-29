@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given inorder and postorder traversal of a tree, construct the binary tree.
@@ -12,7 +10,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q106_ConstructBinaryTreefromInorderandPostorderTraversal
     {
         public BinaryTree BuildTree(int[] inOrder, int[] postOrder)

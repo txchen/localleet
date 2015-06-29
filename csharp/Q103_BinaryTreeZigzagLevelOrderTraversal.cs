@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a binary tree, return the zigzag level order traversal of its nodes' values.
@@ -26,7 +24,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q103_BinaryTreeZigzagLevelOrderTraversal
     {
         public int[][] ZigzagLevelOrder(BinaryTree root)

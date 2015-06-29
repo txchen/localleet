@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
@@ -25,7 +23,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q102_BinaryTreeLevelOrderTraversal
     {
         public int[][] LevelOrder(BinaryTree root)

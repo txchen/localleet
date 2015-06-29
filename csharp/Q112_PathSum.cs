@@ -1,13 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
-// Given a binary tree and a sum, determine if the tree has a root-to-leaf path 
+// Given a binary tree and a sum, determine if the tree has a root-to-leaf path
 // such that adding up all the values along the path equals the given sum.
-   
+
 // For example:
 // Given the below binary tree and sum = 22,
 //               5
@@ -21,7 +19,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q112_PathSum
     {
         public bool HasPathSum(BinaryTree root, int sum)

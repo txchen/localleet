@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a binary tree
@@ -38,7 +36,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q116_PopulatingNextRightPointersinEachNode
     {
         public TreeNodeWithNext Connect(BinaryTree input)

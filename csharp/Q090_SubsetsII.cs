@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a collection of integers that might contain duplicates, S, return all possible subsets.
@@ -25,7 +23,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q090_SubsetsII
     {
         public int[][] SubsetsWithDup(int[] num)

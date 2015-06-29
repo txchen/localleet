@@ -1,13 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // The gray code is a binary numeral system where two successive values differ in only one bit.
 
-// Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. 
+// Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code.
 // A gray code sequence must begin with 0.
 
 // For example, given n = 2, return [0,1,3,2]. Its gray code sequence is:
@@ -23,7 +21,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q089_GrayCode
     {
         public int[] GrayCode(int n)

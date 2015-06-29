@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given a sorted linked list, delete all duplicates such that each element appear only once.
@@ -13,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q083_RemoveDuplicatesfromSortedList
     {
         public ListNode<int> DeleteDuplicates(ListNode<int> head)

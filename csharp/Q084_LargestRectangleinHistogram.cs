@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
@@ -17,7 +15,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q084_LargestRectangleinHistogram
     {
         public int LargestRectangleArea(int[] height)

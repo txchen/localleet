@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Validate if a given string is numeric.
@@ -14,12 +12,12 @@ using Xunit;
 // "1 a" => false
 // "2e10" => true
 
-// Note: It is intended for the problem statement to be ambiguous. 
+// Note: It is intended for the problem statement to be ambiguous.
 // You should gather all requirements up front before implementing one.
 
 namespace LocalLeet
 {
-    
+
     public class Q065_ValidNumber
     {
         public bool IsNumber(string s)

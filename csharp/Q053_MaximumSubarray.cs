@@ -1,8 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 // Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
@@ -12,7 +10,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    
+
     public class Q053_MaximumSubarray
     {
         public int MaxSubArray(int[] input)
