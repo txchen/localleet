@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xunit;
+
+// A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+
+// The robot can only move either down or right at any point in time. 
+// The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+
+// How many possible unique paths are there?
+
+namespace LocalLeet
+{
+    
+    public class Q062_UniquePaths
+    {
+        public int UniquePaths(int m, int n)
+        {
+            int[] tmp = new int[m];
+            tmp[0] = 1;
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 1; j < m; j++)
+                {
+                    tmp[j] = tmp[j] + tmp[j - 1];
+                }
+            }
+            return tmp[m - 1];
+        }
+
+        public string SolveQuestion(string input)
+        {
+            return UniquePaths(input.GetToken(0).ToInt(), input.GetToken(1).ToInt()).ToString();
+        }
+
+        [TestMethod]
+        public void Q062_Small()
+        {
+            TestHelper.Run(s => SolveQuestion(s));
+        }
+        [TestMethod]
+        public void Q062_Large()
+        {
+            TestHelper.Run(s => SolveQuestion(s));
+        }
+    }
+}
