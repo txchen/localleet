@@ -14,7 +14,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q072_EditDistance
     {
         public int MinDistance(string word1, string word2)
@@ -48,12 +47,12 @@ namespace LocalLeet
             return MinDistance(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q072_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q072_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

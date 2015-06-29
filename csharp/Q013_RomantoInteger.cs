@@ -8,7 +8,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q013_RomantoInteger
     {
         static Dictionary<string, int> dict = null;
@@ -31,12 +30,12 @@ namespace LocalLeet
             return RomanToInt(input.Deserialize()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q013_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q013_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

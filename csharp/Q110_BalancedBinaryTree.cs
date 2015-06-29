@@ -10,7 +10,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q110_BalancedBinaryTree
     {
         public bool IsBalanced(BinaryTree root)
@@ -38,12 +37,12 @@ namespace LocalLeet
             return IsBalanced(input.ToBinaryTree()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q110_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q110_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

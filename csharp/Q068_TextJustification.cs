@@ -33,7 +33,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q068_TextJustification
     {
         public string[] FullJustify(string[] words, int length)
@@ -84,12 +83,12 @@ namespace LocalLeet
             return TestHelper.Serialize(FullJustify(input.GetToken(0).ToStringArray(), input.GetToken(1).ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q068_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q068_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

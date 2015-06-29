@@ -14,7 +14,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q026_RemoveDuplicatesfromSortedArray
     {
         public int[] RemoveDuplicates(int[] a)
@@ -48,12 +47,12 @@ namespace LocalLeet
             return TestHelper.Serialize(RemoveDuplicates(input.ToIntArray()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q026_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q026_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -17,7 +17,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q057_InsertInterval
     {
         public int[][] Insert(int[][] intervals, int[] newInterval)
@@ -59,12 +58,12 @@ namespace LocalLeet
             return TestHelper.Serialize(Insert(input.GetToken(0).ToIntArrayArray(), input.GetToken(1).ToIntArray()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q057_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q057_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

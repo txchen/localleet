@@ -11,7 +11,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q011_ContainerWithMostWater
     {
         public int MaxArea(int[] height)
@@ -40,12 +39,12 @@ namespace LocalLeet
             return MaxArea(input.ToIntArray()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q011_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q011_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

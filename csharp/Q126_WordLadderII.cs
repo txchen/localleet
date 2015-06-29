@@ -28,7 +28,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q126_WordLadderII
     {
         public string[][] FindLadders(string start, string end, string[] dict)
@@ -112,12 +111,12 @@ namespace LocalLeet
                 input.GetToken(1).Deserialize(), input.GetToken(2).ToStringArray()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q126_Small()
         {
             TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreStringArrayArrayEqual);
         }
-        [TestMethod]
+        [Fact]
         public void Q126_Large()
         {
             TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreStringArrayArrayEqual);

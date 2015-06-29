@@ -13,7 +13,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q098_ValidateBinarySearchTree
     {
         public bool IsValidBST(BinaryTree root)
@@ -52,12 +51,12 @@ namespace LocalLeet
             return IsValidBST(input.ToBinaryTree()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q098_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q098_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -24,7 +24,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q103_BinaryTreeZigzagLevelOrderTraversal
     {
         public int[][] ZigzagLevelOrder(BinaryTree root)
@@ -82,12 +81,12 @@ namespace LocalLeet
             return TestHelper.Serialize(ZigzagLevelOrder(input.ToBinaryTree()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q103_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q103_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

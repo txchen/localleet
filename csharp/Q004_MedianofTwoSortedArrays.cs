@@ -7,7 +7,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q004_MedianofTwoSortedArrays
     {
         public double FindMedianSortedArrays(int[] a, int[] b)
@@ -21,12 +20,12 @@ namespace LocalLeet
             return FindMedianSortedArrays(input.GetToken(0).ToIntArray(), input.GetToken(1).ToIntArray()).ToString("F5");
         }
 
-        [TestMethod]
+        [Fact]
         public void Q004_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q004_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

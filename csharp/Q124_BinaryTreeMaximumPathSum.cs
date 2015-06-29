@@ -17,7 +17,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q124_BinaryTreeMaximumPathSum
     {
         public int MaxPathSum(BinaryTree root)
@@ -64,12 +63,12 @@ namespace LocalLeet
             return MaxPathSum(input.ToBinaryTree()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q124_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q124_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

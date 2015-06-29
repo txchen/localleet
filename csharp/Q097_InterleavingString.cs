@@ -15,7 +15,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q097_InterleavingString
     {
         public bool IsInterleave(string s1, string s2, string s3)
@@ -57,12 +56,12 @@ namespace LocalLeet
                 input.GetToken(2).Deserialize()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q097_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q097_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

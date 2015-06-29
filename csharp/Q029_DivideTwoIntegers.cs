@@ -7,7 +7,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q029_DivideTwoIntegers
     {
         public int Divide(int dividend, int divisor)
@@ -41,12 +40,12 @@ namespace LocalLeet
             return Divide(input.GetToken(0).ToInt(), input.GetToken(1).ToInt()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q029_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q029_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

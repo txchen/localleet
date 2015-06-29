@@ -11,7 +11,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q022_GenerateParentheses
     {
         public string[] GenerateParenthesis(int n)
@@ -51,12 +50,12 @@ namespace LocalLeet
             return TestHelper.Serialize(GenerateParenthesis(input.ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q022_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q022_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

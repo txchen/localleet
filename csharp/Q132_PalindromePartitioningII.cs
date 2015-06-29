@@ -12,7 +12,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q132_PalindromePartitioningII
     {
         public int MinCut(string input)
@@ -67,12 +66,12 @@ namespace LocalLeet
             return MinCut(input.Deserialize()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q132_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q132_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

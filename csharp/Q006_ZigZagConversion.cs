@@ -16,7 +16,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q006_ZigZagConversion
     {
         public string Convert(string s, int nRows)
@@ -46,12 +45,12 @@ namespace LocalLeet
             return "\"" + Convert(input.GetToken(0).Deserialize(), input.GetToken(1).ToInt()) + "\"";
         }
 
-        [TestMethod]
+        [Fact]
         public void Q006_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q006_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

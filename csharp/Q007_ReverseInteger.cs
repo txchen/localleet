@@ -9,7 +9,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q007_ReverseInteger
     {
         public int ReverseInterger(int x)
@@ -31,12 +30,12 @@ namespace LocalLeet
             return ReverseInterger(input.ToInt()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q007_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q007_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

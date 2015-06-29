@@ -12,7 +12,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q062_UniquePaths
     {
         public int UniquePaths(int m, int n)
@@ -34,12 +33,12 @@ namespace LocalLeet
             return UniquePaths(input.GetToken(0).ToInt(), input.GetToken(1).ToInt()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q062_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q062_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

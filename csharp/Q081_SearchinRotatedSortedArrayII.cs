@@ -12,7 +12,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q081_SearchinRotatedSortedArrayII
     {
         public bool SearchRotated(int[] input, int target)
@@ -59,12 +58,12 @@ namespace LocalLeet
             return SearchRotated(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q081_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q081_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

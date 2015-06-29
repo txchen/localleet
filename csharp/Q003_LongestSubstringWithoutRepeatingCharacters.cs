@@ -50,12 +50,12 @@ namespace LocalLeet
             return LengthOfLongestSubstring(input.Deserialize()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q003_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q003_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

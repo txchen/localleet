@@ -11,7 +11,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q088_MergeSortedArray
     {
         public int[] Merge(int[] a, int[] b)
@@ -57,12 +56,12 @@ namespace LocalLeet
             return TestHelper.Serialize(Merge(input.GetToken(0).ToIntArray(), input.GetToken(1).ToIntArray()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q088_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q088_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

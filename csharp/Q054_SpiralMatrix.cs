@@ -17,7 +17,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q054_SpiralMatrix
     {
         public int[] SpiralOrder(int[][] matrix)
@@ -77,12 +76,12 @@ namespace LocalLeet
             return TestHelper.Serialize(SpiralOrder(input.ToIntArrayArray()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q054_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q054_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

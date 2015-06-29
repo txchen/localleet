@@ -16,7 +16,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q038_CountandSay
     {
         public string CountAndSay(int n)
@@ -53,12 +52,12 @@ namespace LocalLeet
             return "\"" + CountAndSay(input.ToInt()) + "\"";
         }
 
-        [TestMethod]
+        [Fact]
         public void Q038_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q038_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -6,7 +6,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q008_StringtoInteger
     {
         public int Atoi(string str)
@@ -47,12 +46,12 @@ namespace LocalLeet
             return Atoi(input.Deserialize()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q008_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q008_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

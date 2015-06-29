@@ -9,7 +9,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q043_MultiplyStrings
     {
         public string Multiply(string num1, string num2)
@@ -40,12 +39,12 @@ namespace LocalLeet
             return "\"" + Multiply(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()) + "\"";
         }
 
-        [TestMethod]
+        [Fact]
         public void Q043_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q043_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

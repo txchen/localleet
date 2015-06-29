@@ -10,7 +10,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q042_TrappingRainWater
     {
         public int TrapWater(int[] inputs)
@@ -50,12 +49,12 @@ namespace LocalLeet
             return TrapWater(input.ToIntArray()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q042_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q042_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

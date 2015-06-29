@@ -24,7 +24,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q101_SymmetricTree
     {
         public bool IsSymmetric(BinaryTree root)
@@ -73,12 +72,12 @@ namespace LocalLeet
             return IsSymmetric(input.ToBinaryTree()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q101_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q101_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -9,7 +9,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q111_MinimumDepthofBinaryTree
     {
         public int MinDepth(BinaryTree root)
@@ -38,12 +37,12 @@ namespace LocalLeet
             return MinDepth(input.ToBinaryTree()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q111_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q111_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

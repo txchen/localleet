@@ -6,7 +6,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q009_PalindromeNumber
     {
         public bool IsPalindrome(int x)
@@ -40,12 +39,12 @@ namespace LocalLeet
             return IsPalindrome(input.ToInt()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q009_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q009_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

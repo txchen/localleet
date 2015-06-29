@@ -42,7 +42,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q087_ScrambleString
     {
         public bool IsScramble(string s1, string s2)
@@ -82,12 +81,12 @@ namespace LocalLeet
             return IsScramble(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q087_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q087_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

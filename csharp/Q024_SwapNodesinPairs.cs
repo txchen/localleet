@@ -12,7 +12,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q024_SwapNodesinPairs
     {
         public ListNode<int> SwapPairs(ListNode<int> head)
@@ -36,12 +35,12 @@ namespace LocalLeet
             return SwapPairs(input.ToListNode<int>()).SerializeListNode();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q024_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q024_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -18,16 +18,16 @@ namespace LocalLeet
 
     public class CaseInput
     {
-        private string _inputString;
+        private string[] _inputParameters;
 
         public CaseInput(string s)
         {
-            _inputString = s;
+            _inputParameters = s.Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
         }
 
         public string this[int index]
         {
-            get { return _inputString.Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries)[index]; }
+            get { return _inputParameters[index]; }
         }
     }
 
@@ -47,7 +47,8 @@ namespace LocalLeet
             StringBuilder sb = new StringBuilder();
             if (!File.Exists(caseFileName))
             {
-                Assert.True(false, String.Format("Case data file: '{0}' does not exist, please create the data file", caseFileName));
+                Assert.True(false,
+                    String.Format("Case data file: '{0}' does not exist, please create the data file", caseFileName));
             }
 
             var testCases = JsonConvert.DeserializeObject<CaseData[]>(File.ReadAllText(caseFileName));

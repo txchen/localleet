@@ -9,7 +9,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q027_RemoveElement
     {
         int[] RemoveElement(int[] a, int toRemove)
@@ -30,12 +29,12 @@ namespace LocalLeet
             return TestHelper.Serialize(RemoveElement(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q027_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q027_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

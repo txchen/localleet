@@ -17,7 +17,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q076_MinimumWindowSubstring
     {
         public string MinWindow(string src, string target)
@@ -73,12 +72,12 @@ namespace LocalLeet
             return "\"" + MinWindow(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()) + "\"";
         }
 
-        [TestMethod]
+        [Fact]
         public void Q076_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q076_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

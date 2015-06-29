@@ -22,7 +22,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q130_SurroundedRegions
     {
         public string[] Solve(string[] board)
@@ -97,12 +96,12 @@ namespace LocalLeet
             return TestHelper.Serialize(Solve(input.ToStringArray()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q130_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q130_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

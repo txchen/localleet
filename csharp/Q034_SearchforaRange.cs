@@ -15,7 +15,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q034_SearchforaRange
     {
         public int[] SearchRange(int[] A, int target)
@@ -77,12 +76,12 @@ namespace LocalLeet
             return TestHelper.Serialize(SearchRange(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q034_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q034_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -6,7 +6,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q014_LongestCommonPrefix
     {
         public string LongestCommonPrefix(string[] strs)
@@ -36,12 +35,12 @@ namespace LocalLeet
             return "\"" + LongestCommonPrefix(input.ToStringArray()) + "\"";
         }
 
-        [TestMethod]
+        [Fact]
         public void Q014_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q014_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

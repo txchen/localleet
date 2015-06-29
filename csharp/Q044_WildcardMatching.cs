@@ -22,7 +22,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q044_WildcardMatching
     {
         public bool IsMatch(string input, string pattern)
@@ -87,12 +86,12 @@ namespace LocalLeet
             return IsMatch(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q044_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q044_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -9,7 +9,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q069_SqrtX
     {
         public int Sqrt(int x)
@@ -57,12 +56,12 @@ namespace LocalLeet
             return Sqrt(input.ToInt()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q069_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q069_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

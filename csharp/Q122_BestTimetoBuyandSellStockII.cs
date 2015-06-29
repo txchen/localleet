@@ -11,7 +11,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q122_BestTimetoBuyandSellStockII
     {
         public int MaxProfitII(int[] prices)
@@ -33,12 +32,12 @@ namespace LocalLeet
             return MaxProfitII(input.ToIntArray()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q122_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q122_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -11,7 +11,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q016_3SumClosest
     {
         public int ThreeSumClosest(int[] num, int target)
@@ -53,12 +52,12 @@ namespace LocalLeet
             return ThreeSumClosest(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q016_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q016_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -16,7 +16,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q092_ReverseLinkedListII
     {
         public ListNode<int> ReverseBetween(ListNode<int> head, int m, int n)
@@ -50,12 +49,12 @@ namespace LocalLeet
                 input.GetToken(2).ToInt()).SerializeListNode();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q092_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q092_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

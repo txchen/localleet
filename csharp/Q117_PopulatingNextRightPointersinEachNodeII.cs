@@ -28,7 +28,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q117_PopulatingNextRightPointersinEachNodeII
     {
         public TreeNodeWithNext Connect(BinaryTree input)
@@ -42,12 +41,12 @@ namespace LocalLeet
             return Connect(input.ToBinaryTree()).SerializeTreeNodeWithNext();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q117_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q117_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

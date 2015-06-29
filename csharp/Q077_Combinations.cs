@@ -18,7 +18,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q077_Combinations
     {
         public int[][] Combinations(int n, int k)
@@ -48,12 +47,12 @@ namespace LocalLeet
             return TestHelper.Serialize(Combinations(input.GetToken(0).ToInt(), input.GetToken(1).ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q077_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q077_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -11,7 +11,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q017_LetterCombinationsofaPhoneNumber
     {
         Dictionary<char, char[]> dict = new Dictionary<char, char[]>() {
@@ -47,12 +46,12 @@ namespace LocalLeet
             return TestHelper.Serialize(LetterCombinations(input.Deserialize()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q017_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q017_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

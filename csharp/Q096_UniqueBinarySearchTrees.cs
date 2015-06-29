@@ -16,7 +16,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q096_UniqueBinarySearchTrees
     {
         public int NumTrees(int n)
@@ -42,12 +41,12 @@ namespace LocalLeet
             return NumTrees(input.ToInt()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q096_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q096_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

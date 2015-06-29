@@ -12,7 +12,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q099_RecoverBinarySearchTree
     {
         public BinaryTree RecoverTree(BinaryTree root)
@@ -61,12 +60,12 @@ namespace LocalLeet
             return RecoverTree(input.ToBinaryTree()).SerializeBinaryTree();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q099_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q099_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

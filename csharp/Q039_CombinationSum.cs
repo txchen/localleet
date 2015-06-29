@@ -20,7 +20,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q039_CombinationSum
     {
         public int[][] CombinationSum(int[] candidates, int target)
@@ -55,12 +54,12 @@ namespace LocalLeet
             return TestHelper.Serialize(CombinationSum(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q039_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q039_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

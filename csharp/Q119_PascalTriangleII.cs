@@ -13,7 +13,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q119_PascalTriangleII
     {
         public int[] GetRow(int rowIndex)
@@ -42,12 +41,12 @@ namespace LocalLeet
             return TestHelper.Serialize(GetRow(input.ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q119_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q119_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

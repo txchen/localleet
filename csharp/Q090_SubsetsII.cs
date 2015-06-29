@@ -23,7 +23,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q090_SubsetsII
     {
         public int[][] SubsetsWithDup(int[] num)
@@ -75,12 +74,12 @@ namespace LocalLeet
             return TestHelper.Serialize(a1) == TestHelper.Serialize(a2);
         }
 
-        [TestMethod]
+        [Fact]
         public void Q090_Small()
         {
             TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreIntArrayArrayEqual);
         }
-        [TestMethod]
+        [Fact]
         public void Q090_Large()
         {
             TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreIntArrayArrayEqual);

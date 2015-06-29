@@ -12,7 +12,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q048_RotateImage
     {
         public int[][] Rotate(int[][] matrix)
@@ -45,12 +44,12 @@ namespace LocalLeet
             return TestHelper.Serialize(Rotate(input.ToIntArrayArray()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q048_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q048_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

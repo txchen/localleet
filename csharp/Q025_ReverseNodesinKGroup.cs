@@ -16,7 +16,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q025_ReverseNodesinKGroup
     {
         public ListNode<int> ReverseKGroup(ListNode<int> head, int k)
@@ -59,12 +58,12 @@ namespace LocalLeet
             return ReverseKGroup(input.GetToken(0).ToListNode<int>(), input.GetToken(1).ToInt()).SerializeListNode();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q025_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q025_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

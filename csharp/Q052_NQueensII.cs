@@ -9,7 +9,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q052_NQueensII
     {
         public int SolveNQueensII(int n)
@@ -46,12 +45,12 @@ namespace LocalLeet
             return SolveNQueensII(input.ToInt()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q052_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q052_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

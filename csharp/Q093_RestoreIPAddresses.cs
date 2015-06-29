@@ -12,7 +12,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q093_RestoreIPAddresses
     {
         public string[] RestoreIpAddresses(string s)
@@ -55,12 +54,12 @@ namespace LocalLeet
             return TestHelper.Serialize(RestoreIpAddresses(input.Deserialize()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q093_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q093_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

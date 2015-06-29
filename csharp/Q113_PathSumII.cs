@@ -23,7 +23,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q113_PathSumII
     {
         public int[][] PathSum(BinaryTree root, int sum)
@@ -66,12 +65,12 @@ namespace LocalLeet
             return TestHelper.Serialize(PathSum(input.GetToken(0).ToBinaryTree(), input.GetToken(1).ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q113_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q113_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

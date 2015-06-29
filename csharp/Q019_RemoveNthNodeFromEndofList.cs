@@ -14,7 +14,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q019_RemoveNthNodeFromEndofList
     {
         public ListNode<int> RemoveNthFromEnd(ListNode<int> head, int n)
@@ -43,12 +42,12 @@ namespace LocalLeet
             return RemoveNthFromEnd(input.GetToken(0).ToListNode<int>(), input.GetToken(1).ToInt()).SerializeListNode();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q019_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q019_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

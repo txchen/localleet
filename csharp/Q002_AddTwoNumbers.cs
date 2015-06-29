@@ -36,12 +36,12 @@ namespace LocalLeet
                 input.GetToken(1).ToListNode<int>()).SerializeListNode();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q002_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q002_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

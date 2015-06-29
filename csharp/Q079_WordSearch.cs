@@ -23,7 +23,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q079_WordSearch
     {
         public bool Exist(string[] board, string word)
@@ -76,12 +75,12 @@ namespace LocalLeet
             return Exist(input.GetToken(0).ToStringArray(), input.GetToken(1).Deserialize()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q079_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q079_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

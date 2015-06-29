@@ -17,7 +17,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q059_SpiralMatrixII
     {
         public int[][] GenerateMatrix(int n)
@@ -67,12 +66,12 @@ namespace LocalLeet
             return TestHelper.Serialize(GenerateMatrix(input.ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q059_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q059_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

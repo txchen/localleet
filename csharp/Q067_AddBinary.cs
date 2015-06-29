@@ -12,7 +12,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q067_AddBinary
     {
         public string AddBinary(string a, string b)
@@ -56,12 +55,12 @@ namespace LocalLeet
             return "\"" + AddBinary(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()) + "\"";
         }
 
-        [TestMethod]
+        [Fact]
         public void Q067_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q067_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

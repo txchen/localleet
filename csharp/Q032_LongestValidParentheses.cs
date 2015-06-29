@@ -12,7 +12,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q032_LongestValidParentheses
     {
         public int LongestValidParentheses(string s)
@@ -47,12 +46,12 @@ namespace LocalLeet
             return LongestValidParentheses(input.Deserialize()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q032_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q032_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

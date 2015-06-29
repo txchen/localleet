@@ -24,7 +24,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q107_BinaryTreeLevelOrderTraversalII
     {
         public int[][] LevelOrderBottomII(BinaryTree root)
@@ -64,12 +63,12 @@ namespace LocalLeet
             return TestHelper.Serialize(LevelOrderBottomII(input.ToBinaryTree()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q107_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q107_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

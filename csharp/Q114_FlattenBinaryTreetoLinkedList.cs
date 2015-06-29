@@ -28,7 +28,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q114_FlattenBinaryTreetoLinkedList
     {
         public BinaryTree Flatten(BinaryTree root)
@@ -55,12 +54,12 @@ namespace LocalLeet
             return Flatten(input.ToBinaryTree()).SerializeBinaryTree();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q114_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q114_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

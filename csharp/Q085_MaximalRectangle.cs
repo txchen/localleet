@@ -23,7 +23,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q085_MaximalRectangle
     {
         public int MaximalRectangle(string[] matrix)
@@ -70,12 +69,12 @@ namespace LocalLeet
             return MaximalRectangle(input.ToStringArray()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q085_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q085_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

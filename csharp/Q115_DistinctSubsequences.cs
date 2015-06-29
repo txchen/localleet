@@ -16,7 +16,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q115_DistinctSubsequences
     {
         public int NumDistinct(string src, string tgt)
@@ -47,12 +46,12 @@ namespace LocalLeet
             return NumDistinct(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q115_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q115_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

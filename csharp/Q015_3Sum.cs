@@ -16,7 +16,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q015_3Sum
     {
         public int[][] ThreeSum(int[] num)
@@ -62,12 +61,12 @@ namespace LocalLeet
             return TestHelper.Serialize(result);
         }
 
-        [TestMethod]
+        [Fact]
         public void Q015_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q015_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

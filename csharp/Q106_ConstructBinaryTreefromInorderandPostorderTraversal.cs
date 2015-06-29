@@ -10,7 +10,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q106_ConstructBinaryTreefromInorderandPostorderTraversal
     {
         public BinaryTree BuildTree(int[] inOrder, int[] postOrder)
@@ -44,12 +43,12 @@ namespace LocalLeet
             return BuildTree(input.GetToken(0).ToIntArray(), input.GetToken(1).ToIntArray()).SerializeBinaryTree();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q106_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q106_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

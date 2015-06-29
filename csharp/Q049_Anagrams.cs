@@ -9,7 +9,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q049_Anagrams
     {
         public string[] Anagrams(string[] strs)
@@ -61,12 +60,12 @@ namespace LocalLeet
             return true;
         }
 
-        [TestMethod]
+        [Fact]
         public void Q049_Small()
         {
             TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreStringsEqual);
         }
-        [TestMethod]
+        [Fact]
         public void Q049_Large()
         {
             TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreStringsEqual);

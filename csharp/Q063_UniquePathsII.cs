@@ -21,7 +21,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q063_UniquePathsII
     {
         public int UniquePathsWithObstacles(int[][] obstacleGrid)
@@ -52,12 +51,12 @@ namespace LocalLeet
             return UniquePathsWithObstacles(input.ToIntArrayArray()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q063_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q063_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

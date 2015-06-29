@@ -9,7 +9,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q036_ValidSudoku
     {
         public bool IsValidSudoku(int[,] board)
@@ -83,12 +82,12 @@ namespace LocalLeet
             return IsValidSudoku(data).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q036_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q036_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

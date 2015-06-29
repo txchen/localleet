@@ -14,7 +14,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q086_PartitionList
     {
         public ListNode<int> Partition(ListNode<int> head, int x)
@@ -49,12 +48,12 @@ namespace LocalLeet
             return Partition(input.GetToken(0).ToListNode<int>(), input.GetToken(1).ToInt()).SerializeListNode();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q086_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q086_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

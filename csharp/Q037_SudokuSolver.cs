@@ -11,7 +11,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q037_SudokuSolver
     {
         public int[,] SolveSudoku(int[,] board)
@@ -101,12 +100,12 @@ namespace LocalLeet
             return SerializeSodoku(SolveSudoku(data));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q037_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q037_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

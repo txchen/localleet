@@ -9,7 +9,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q028_ImplementstrStr
     {
         public string StrStr(string haystack, string needle)
@@ -46,12 +45,12 @@ namespace LocalLeet
             return StrStr(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()).SerializeString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q028_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q028_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

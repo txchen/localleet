@@ -18,7 +18,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q091_DecodeWays
     {
         public int NumDecodings(string s)
@@ -54,12 +53,12 @@ namespace LocalLeet
             return NumDecodings(input.Deserialize()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q091_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q091_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

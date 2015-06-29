@@ -18,7 +18,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q118_PascalTriangle
     {
         public int[][] Generate(int numRows)
@@ -46,12 +45,12 @@ namespace LocalLeet
             return TestHelper.Serialize(Generate(input.ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q118_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q118_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

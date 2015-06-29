@@ -23,7 +23,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q010_RegularExpressionMatching
     {
         public bool IsMatch(string input, string pattern)
@@ -71,12 +70,12 @@ namespace LocalLeet
                 .ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q010_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q010_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

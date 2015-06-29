@@ -8,7 +8,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q012_IntegertoRoman
     {
         string[] ones = new string[] { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
@@ -34,12 +33,12 @@ namespace LocalLeet
             return "\"" + IntToRoman(input.ToInt()) + "\"";
         }
 
-        [TestMethod]
+        [Fact]
         public void Q012_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q012_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

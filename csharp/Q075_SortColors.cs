@@ -19,7 +19,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q075_SortColors
     {
         public int[] SortColors(int[] input)
@@ -67,12 +66,12 @@ namespace LocalLeet
             return TestHelper.Serialize(SortColors(input.ToIntArray()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q075_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q075_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

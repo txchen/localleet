@@ -19,7 +19,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q112_PathSum
     {
         public bool HasPathSum(BinaryTree root, int sum)
@@ -48,12 +47,12 @@ namespace LocalLeet
             return HasPathSum(input.GetToken(0).ToBinaryTree(), input.GetToken(1).ToInt()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q112_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q112_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

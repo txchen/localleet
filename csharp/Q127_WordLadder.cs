@@ -26,7 +26,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q127_WordLadder
     {
         public int LadderLength(string start, string end, string[] dict)
@@ -78,12 +77,12 @@ namespace LocalLeet
                 input.GetToken(2).ToStringArray()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q127_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q127_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

@@ -17,7 +17,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q018_4Sum
     {
         public int[][] FourSum(int[] num, int target)
@@ -62,12 +61,12 @@ namespace LocalLeet
             return TestHelper.Serialize(FourSum(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q018_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q018_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

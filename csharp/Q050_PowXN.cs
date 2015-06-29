@@ -7,7 +7,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q050_PowXN
     {
         public double Pow(double x, int n)
@@ -48,12 +47,12 @@ namespace LocalLeet
             return Pow(input.GetToken(0).ToDouble(), input.GetToken(1).ToInt()).ToString("f5");
         }
 
-        [TestMethod]
+        [Fact]
         public void Q050_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q050_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

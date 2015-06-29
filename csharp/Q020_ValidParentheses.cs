@@ -9,7 +9,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q020_ValidParentheses
     {
         public bool IsValid(string s)
@@ -55,12 +54,12 @@ namespace LocalLeet
             return IsValid(input.Deserialize()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q020_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q020_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

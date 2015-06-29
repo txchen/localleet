@@ -16,7 +16,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q125_ValidPalindrome
     {
         public bool IsPalindrome(string s)
@@ -42,12 +41,12 @@ namespace LocalLeet
             return IsPalindrome(input.Deserialize()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q125_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q125_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

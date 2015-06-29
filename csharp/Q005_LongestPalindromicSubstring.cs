@@ -7,7 +7,6 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
     public class Q005_LongestPalindromicSubstring
     {
         string LongestPalindrome(string input)
@@ -45,12 +44,12 @@ namespace LocalLeet
             return "\"" + LongestPalindrome(input.Deserialize()) + "\"";
         }
 
-        [TestMethod]
+        [Fact]
         public void Q005_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q005_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

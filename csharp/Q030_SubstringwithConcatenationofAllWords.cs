@@ -16,7 +16,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q030_SubstringwithConcatenationofAllWords
     {
         public int[] FindSubstring(string s, string[] l)
@@ -61,12 +60,12 @@ namespace LocalLeet
                 FindSubstring(input.GetToken(0).Deserialize(), input.GetToken(1).ToStringArray()));
         }
 
-        [TestMethod]
+        [Fact]
         public void Q030_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q030_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

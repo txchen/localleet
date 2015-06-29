@@ -36,7 +36,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q116_PopulatingNextRightPointersinEachNode
     {
         public TreeNodeWithNext Connect(BinaryTree input)
@@ -127,12 +126,12 @@ namespace LocalLeet
             return Connect(input.ToBinaryTree()).SerializeTreeNodeWithNext();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q116_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q116_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

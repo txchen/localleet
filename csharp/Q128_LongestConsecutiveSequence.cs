@@ -13,7 +13,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q128_LongestConsecutiveSequence
     {
         public int LongestConsecutive(int[] num)
@@ -47,12 +46,12 @@ namespace LocalLeet
             return LongestConsecutive(input.ToIntArray()).ToString();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q128_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q128_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));

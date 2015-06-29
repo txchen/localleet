@@ -14,7 +14,6 @@ using Xunit;
 
 namespace LocalLeet
 {
-
     public class Q055_JumpGame
     {
         public bool CanJump(int[] input)
@@ -47,12 +46,12 @@ namespace LocalLeet
             return CanJump(input.ToIntArray()).ToString().ToLower();
         }
 
-        [TestMethod]
+        [Fact]
         public void Q055_Small()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [TestMethod]
+        [Fact]
         public void Q055_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));
