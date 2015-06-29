@@ -1,0 +1,5 @@
+[
+{"id":1,"input":"\"barfoothefoobarman\", [\"foo\",\"bar\"]","expected":"[0,9]"},
+{"id":2,"input":"\"lingmindraboofooowingdingbarrwingmonkeypoundcake\", [\"fooo\",\"barr\",\"wing\",\"ding\",\"wing\"]","expected":"[13]"},
+{"id":3,"input":"\"a\", [\"a\"]","expected":"[0]"},
+]

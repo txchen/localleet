@@ -1,0 +1,5 @@
+[
+{"id":1,"input":"\"a\"","expected":"\"a\""},
+{"id":2,"input":"\"bb\"","expected":"\"bb\""},
+{"id":3,"input":"\"ccc\"","expected":"\"ccc\""},
+]

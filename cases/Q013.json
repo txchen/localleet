@@ -1,0 +1,5 @@
+[
+{"id":1,"input":"\"DCXXI\"","expected":"621"},
+{"id":2,"input":"\"MCMXCVI\"","expected":"1996"},
+{"id":3,"input":"\"MDCCCLXXXIV\"","expected":"1884"},
+]
