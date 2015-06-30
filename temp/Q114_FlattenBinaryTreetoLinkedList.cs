@@ -51,7 +51,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return Flatten(input.ToBinaryTree()).SerializeBinaryTree();
+            return Flatten(input[0].ToBinaryTree()).SerializeBinaryTree();
         }
 
         [Fact]

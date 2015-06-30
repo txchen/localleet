@@ -52,7 +52,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return SumNumbers(input.ToBinaryTree()).ToString();
+            return SumNumbers(input[0].ToBinaryTree()).ToString();
         }
 
         [Fact]

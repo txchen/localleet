@@ -66,7 +66,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return MaximalRectangle(input.ToStringArray()).ToString();
+            return MaximalRectangle(input[0].ToStringArray()).ToString();
         }
 
         [Fact]

@@ -46,7 +46,7 @@ namespace LocalLeet
         public string SolveQuestion(string input)
         {
             return ReverseBetween(input[0].ToListNode<int>(), input[1].ToInt(),
-                input.GetToken(2).ToInt()).SerializeListNode();
+                input[0].GetToken(2).ToInt()).SerializeListNode();
         }
 
         [Fact]

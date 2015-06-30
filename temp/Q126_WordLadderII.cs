@@ -108,7 +108,7 @@ namespace LocalLeet
         public string SolveQuestion(string input)
         {
             return TestHelper.Serialize(FindLadders(input[0].Deserialize(),
-                input[1].Deserialize(), input.GetToken(2).ToStringArray()));
+                input[1].Deserialize(), input[0].GetToken(2).ToStringArray()));
         }
 
         [Fact]

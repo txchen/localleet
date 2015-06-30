@@ -73,7 +73,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(SpiralOrder(input.ToIntArrayArray()));
+            return TestHelper.Serialize(SpiralOrder(input[0].ToIntArrayArray()));
         }
 
         [Fact]

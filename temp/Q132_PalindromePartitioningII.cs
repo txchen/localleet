@@ -63,7 +63,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return MinCut(input.Deserialize()).ToString();
+            return MinCut(input[0].Deserialize()).ToString();
         }
 
         [Fact]

@@ -69,7 +69,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return IsSymmetric(input.ToBinaryTree()).ToString().ToLower();
+            return IsSymmetric(input[0].ToBinaryTree()).ToString().ToLower();
         }
 
         [Fact]

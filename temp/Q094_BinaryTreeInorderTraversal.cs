@@ -64,7 +64,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(InorderTraversal(input.ToBinaryTree()));
+            return TestHelper.Serialize(InorderTraversal(input[0].ToBinaryTree()));
         }
 
         [Fact]

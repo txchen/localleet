@@ -38,7 +38,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return Connect(input.ToBinaryTree()).SerializeTreeNodeWithNext();
+            return Connect(input[0].ToBinaryTree()).SerializeTreeNodeWithNext();
         }
 
         [Fact]

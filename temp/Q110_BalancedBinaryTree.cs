@@ -34,7 +34,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return IsBalanced(input.ToBinaryTree()).ToString().ToLower();
+            return IsBalanced(input[0].ToBinaryTree()).ToString().ToLower();
         }
 
         [Fact]

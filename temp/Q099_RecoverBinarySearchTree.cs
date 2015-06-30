@@ -57,7 +57,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return RecoverTree(input.ToBinaryTree()).SerializeBinaryTree();
+            return RecoverTree(input[0].ToBinaryTree()).SerializeBinaryTree();
         }
 
         [Fact]

@@ -63,7 +63,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(GenerateMatrix(input.ToInt()));
+            return TestHelper.Serialize(GenerateMatrix(input[0].ToInt()));
         }
 
         [Fact]

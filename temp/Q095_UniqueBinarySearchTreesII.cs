@@ -51,7 +51,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return GenerateTrees(input.ToInt()).SerializeBinaryTreeArray();
+            return GenerateTrees(input[0].ToInt()).SerializeBinaryTreeArray();
         }
 
         [Fact]

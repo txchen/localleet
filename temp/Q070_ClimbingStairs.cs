@@ -33,7 +33,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return ClimbStairs(input.ToInt()).ToString();
+            return ClimbStairs(input[0].ToInt()).ToString();
         }
 
         [Fact]

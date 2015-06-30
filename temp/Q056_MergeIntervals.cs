@@ -41,7 +41,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(Merge(input.ToIntArrayArray()));
+            return TestHelper.Serialize(Merge(input[0].ToIntArrayArray()));
         }
 
         [Fact]

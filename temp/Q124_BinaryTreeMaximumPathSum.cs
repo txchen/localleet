@@ -60,7 +60,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return MaxPathSum(input.ToBinaryTree()).ToString();
+            return MaxPathSum(input[0].ToBinaryTree()).ToString();
         }
 
         [Fact]

@@ -48,7 +48,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return UniquePathsWithObstacles(input.ToIntArrayArray()).ToString();
+            return UniquePathsWithObstacles(input[0].ToIntArrayArray()).ToString();
         }
 
         [Fact]

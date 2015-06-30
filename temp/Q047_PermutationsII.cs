@@ -61,7 +61,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(PermuteUnique(input.ToIntArray()));
+            return TestHelper.Serialize(PermuteUnique(input[0].ToIntArray()));
         }
 
         [Fact]

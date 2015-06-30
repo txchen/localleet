@@ -34,7 +34,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return MinDepth(input.ToBinaryTree()).ToString();
+            return MinDepth(input[0].ToBinaryTree()).ToString();
         }
 
         [Fact]

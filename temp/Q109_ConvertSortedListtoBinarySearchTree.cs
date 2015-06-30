@@ -44,7 +44,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return SortedListToBST(input.ToListNode<int>()).SerializeBinaryTree();
+            return SortedListToBST(input[0].ToListNode<int>()).SerializeBinaryTree();
         }
 
         [Fact]

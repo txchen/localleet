@@ -74,7 +74,7 @@ namespace LocalLeet
         public string SolveQuestion(string input)
         {
             return LadderLength(input[0].Deserialize(), input[1].Deserialize(),
-                input.GetToken(2).ToStringArray()).ToString();
+                input[0].GetToken(2).ToStringArray()).ToString();
         }
 
         [Fact]

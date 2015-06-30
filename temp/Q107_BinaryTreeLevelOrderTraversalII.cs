@@ -60,7 +60,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(LevelOrderBottomII(input.ToBinaryTree()));
+            return TestHelper.Serialize(LevelOrderBottomII(input[0].ToBinaryTree()));
         }
 
         [Fact]

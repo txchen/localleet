@@ -42,7 +42,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(Generate(input.ToInt()));
+            return TestHelper.Serialize(Generate(input[0].ToInt()));
         }
 
         [Fact]

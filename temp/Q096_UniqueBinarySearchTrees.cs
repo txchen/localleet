@@ -38,7 +38,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return NumTrees(input.ToInt()).ToString();
+            return NumTrees(input[0].ToInt()).ToString();
         }
 
         [Fact]

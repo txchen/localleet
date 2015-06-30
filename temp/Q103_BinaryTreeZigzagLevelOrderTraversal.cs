@@ -78,7 +78,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(ZigzagLevelOrder(input.ToBinaryTree()));
+            return TestHelper.Serialize(ZigzagLevelOrder(input[0].ToBinaryTree()));
         }
 
         [Fact]

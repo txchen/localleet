@@ -42,7 +42,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return "\"" + SimplifyPath(input.Deserialize()) + "\"";
+            return "\"" + SimplifyPath(input[0].Deserialize()) + "\"";
         }
 
         [Fact]

@@ -77,7 +77,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return IsNumber(input.Deserialize()).ToString().ToLower();
+            return IsNumber(input[0].Deserialize()).ToString().ToLower();
         }
 
         [Fact]

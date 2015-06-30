@@ -51,7 +51,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(RestoreIpAddresses(input.Deserialize()));
+            return TestHelper.Serialize(RestoreIpAddresses(input[0].Deserialize()));
         }
 
         [Fact]

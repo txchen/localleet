@@ -23,7 +23,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return SortedArrayToBST(input.ToIntArray()).SerializeBinaryTree();
+            return SortedArrayToBST(input[0].ToIntArray()).SerializeBinaryTree();
         }
 
         [Fact]

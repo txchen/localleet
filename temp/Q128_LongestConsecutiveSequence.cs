@@ -43,7 +43,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return LongestConsecutive(input.ToIntArray()).ToString();
+            return LongestConsecutive(input[0].ToIntArray()).ToString();
         }
 
         [Fact]

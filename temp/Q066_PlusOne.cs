@@ -28,7 +28,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(PlusOne(input.ToIntArray()));
+            return TestHelper.Serialize(PlusOne(input[0].ToIntArray()));
         }
 
         [Fact]

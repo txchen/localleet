@@ -22,7 +22,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return MaxDepth(input.ToBinaryTree()).ToString();
+            return MaxDepth(input[0].ToBinaryTree()).ToString();
         }
 
         [Fact]

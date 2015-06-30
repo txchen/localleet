@@ -53,7 +53,7 @@ namespace LocalLeet
         public string SolveQuestion(string input)
         {
             return IsInterleave(input[0].Deserialize(), input[1].Deserialize(),
-                input.GetToken(2).Deserialize()).ToString().ToLower();
+                input[0].GetToken(2).Deserialize()).ToString().ToLower();
         }
 
         [Fact]

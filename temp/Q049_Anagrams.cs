@@ -39,7 +39,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(Anagrams(input.ToStringArray()));
+            return TestHelper.Serialize(Anagrams(input[0].ToStringArray()));
         }
 
         private bool AreStringsEqual(string expected, string actual)

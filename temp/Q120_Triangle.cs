@@ -39,7 +39,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return MinimumTotal(input.ToIntArrayArray()).ToString();
+            return MinimumTotal(input[0].ToIntArrayArray()).ToString();
         }
 
         [Fact]

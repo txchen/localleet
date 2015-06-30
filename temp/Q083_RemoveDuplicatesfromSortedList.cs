@@ -37,7 +37,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return DeleteDuplicates(input.ToListNode<int>()).SerializeListNode();
+            return DeleteDuplicates(input[0].ToListNode<int>()).SerializeListNode();
         }
 
         [Fact]

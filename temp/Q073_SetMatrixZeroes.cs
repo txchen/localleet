@@ -75,7 +75,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(SetZeroes(input.ToIntArrayArray()));
+            return TestHelper.Serialize(SetZeroes(input[0].ToIntArrayArray()));
         }
 
         [Fact]

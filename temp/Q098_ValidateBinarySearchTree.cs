@@ -48,7 +48,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return IsValidBST(input.ToBinaryTree()).ToString().ToLower();
+            return IsValidBST(input[0].ToBinaryTree()).ToString().ToLower();
         }
 
         [Fact]

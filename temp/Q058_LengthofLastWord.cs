@@ -40,7 +40,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return LengthOfLastWord(input.Deserialize()).ToString();
+            return LengthOfLastWord(input[0].Deserialize()).ToString();
         }
 
         [Fact]

@@ -42,7 +42,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return SolveNQueensII(input.ToInt()).ToString();
+            return SolveNQueensII(input[0].ToInt()).ToString();
         }
 
         [Fact]

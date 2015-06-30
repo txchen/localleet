@@ -93,7 +93,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(Solve(input.ToStringArray()));
+            return TestHelper.Serialize(Solve(input[0].ToStringArray()));
         }
 
         [Fact]

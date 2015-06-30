@@ -63,7 +63,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(SortColors(input.ToIntArray()));
+            return TestHelper.Serialize(SortColors(input[0].ToIntArray()));
         }
 
         [Fact]

@@ -43,7 +43,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(RemoveDuplicates(input.ToIntArray()));
+            return TestHelper.Serialize(RemoveDuplicates(input[0].ToIntArray()));
         }
 
         [Fact]

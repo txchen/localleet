@@ -42,11 +42,6 @@ namespace LocalLeet
             return (int)(neg ? 0 - answer: answer);
         }
 
-        public string SolveQuestion(string input)
-        {
-            return Atoi(input.Deserialize()).ToString();
-        }
-
         [Fact]
         public void Q008_StringtoInteger()
         {

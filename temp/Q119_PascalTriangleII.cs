@@ -38,7 +38,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(GetRow(input.ToInt()));
+            return TestHelper.Serialize(GetRow(input[0].ToInt()));
         }
 
         [Fact]

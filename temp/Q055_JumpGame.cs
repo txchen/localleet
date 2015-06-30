@@ -43,7 +43,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return CanJump(input.ToIntArray()).ToString().ToLower();
+            return CanJump(input[0].ToIntArray()).ToString().ToLower();
         }
 
         [Fact]

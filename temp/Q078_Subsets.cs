@@ -45,7 +45,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(Subsets(input.ToIntArray()));
+            return TestHelper.Serialize(Subsets(input[0].ToIntArray()));
         }
 
         private bool AreIntArrayArrayEqual(string s1, string s2)

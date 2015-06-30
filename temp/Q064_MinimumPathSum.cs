@@ -40,7 +40,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return MinPathSum(input.ToIntArrayArray()).ToString();
+            return MinPathSum(input[0].ToIntArrayArray()).ToString();
         }
 
         [Fact]

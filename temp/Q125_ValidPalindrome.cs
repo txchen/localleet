@@ -38,7 +38,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return IsPalindrome(input.Deserialize()).ToString().ToLower();
+            return IsPalindrome(input[0].Deserialize()).ToString().ToLower();
         }
 
         [Fact]

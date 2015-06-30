@@ -50,7 +50,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return NumDecodings(input.Deserialize()).ToString();
+            return NumDecodings(input[0].Deserialize()).ToString();
         }
 
         [Fact]

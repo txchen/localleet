@@ -53,7 +53,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return Sqrt(input.ToInt()).ToString();
+            return Sqrt(input[0].ToInt()).ToString();
         }
 
         [Fact]

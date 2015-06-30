@@ -30,7 +30,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return MaxSubArray(input.ToIntArray()).ToString();
+            return MaxSubArray(input[0].ToIntArray()).ToString();
         }
 
         [Fact]

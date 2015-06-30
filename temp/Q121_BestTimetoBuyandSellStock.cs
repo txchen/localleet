@@ -34,7 +34,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return MaxProfit(input.ToIntArray()).ToString();
+            return MaxProfit(input[0].ToIntArray()).ToString();
         }
 
         [Fact]

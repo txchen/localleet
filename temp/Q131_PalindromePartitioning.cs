@@ -71,7 +71,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(Partition(input.Deserialize()));
+            return TestHelper.Serialize(Partition(input[0].Deserialize()));
         }
 
         [Fact]
