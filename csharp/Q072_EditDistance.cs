@@ -41,16 +41,10 @@ namespace LocalLeet
             }
             return dp[word1.Length, word2.Length];
         }
-
-        public string SolveQuestion(string input)
-        {
-            return MinDistance(input[0].Deserialize(), input[1].Deserialize()).ToString();
-        }
-
         [Fact]
         public void Q072_EditDistance()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => MinDistance(input[0].Deserialize(), input[1].Deserialize()).ToString());
         }
     }
 }

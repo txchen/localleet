@@ -56,7 +56,7 @@ namespace LocalLeet
             }
             // now use Q84, count hist max area
             int answer = 0;
-            Q084_LargestRectangleinHistogram q84 = new Q084_LargestRectangleinHistogram();
+            Q084 q84 = new Q084();
             for (int r = 0; r < matrix.Length; r++)
             {
                 answer = Math.Max(answer, q84.LargestRectangleArea(data[r]));
@@ -64,15 +64,10 @@ namespace LocalLeet
             return answer;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return MaximalRectangle(input[0].ToStringArray()).ToString();
-        }
-
         [Fact]
         public void Q085_MaximalRectangle()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => MaximalRectangle(input[0].ToStringArray()).ToString());
         }
     }
 }

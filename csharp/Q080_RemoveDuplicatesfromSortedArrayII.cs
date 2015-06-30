@@ -41,15 +41,10 @@ namespace LocalLeet
             return input.Take(write).ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(RemoveDuplicates(input[0].ToIntArray()));
-        }
-
         [Fact]
         public void Q080_RemoveDuplicatesfromSortedArrayII()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(RemoveDuplicates(input[0].ToIntArray())));
         }
     }
 }

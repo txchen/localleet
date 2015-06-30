@@ -76,15 +76,10 @@ namespace LocalLeet
             return false;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return IsScramble(input[0].Deserialize(), input[1].Deserialize()).ToString().ToLower();
-        }
-
         [Fact]
         public void Q087_ScrambleString()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => IsScramble(input[0].Deserialize(), input[1].Deserialize()).ToString().ToLower());
         }
     }
 }

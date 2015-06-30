@@ -67,15 +67,10 @@ namespace LocalLeet
             return src.Substring(answerStart, answerLength);
         }
 
-        public string SolveQuestion(string input)
-        {
-            return "\"" + MinWindow(input[0].Deserialize(), input[1].Deserialize()) + "\"";
-        }
-
         [Fact]
         public void Q076_MinimumWindowSubstring()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => "\"" + MinWindow(input[0].Deserialize(), input[1].Deserialize()) + "\"");
         }
     }
 }

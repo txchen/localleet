@@ -42,15 +42,10 @@ namespace LocalLeet
             }
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(Combinations(input[0].ToInt(), input[1].ToInt()));
-        }
-
         [Fact]
         public void Q077_Combinations()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(Combinations(input[0].ToInt(), input[1].ToInt())));
         }
     }
 }

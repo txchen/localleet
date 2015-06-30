@@ -51,15 +51,10 @@ namespace LocalLeet
             return a;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(Merge(input[0].ToIntArray(), input[1].ToIntArray()));
-        }
-
         [Fact]
         public void Q088_MergeSortedArray()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(Merge(input[0].ToIntArray(), input[1].ToIntArray())));
         }
     }
 }

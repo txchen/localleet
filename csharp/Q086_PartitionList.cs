@@ -43,15 +43,10 @@ namespace LocalLeet
             return preA.Next;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return Partition(input[0].ToListNode<int>(), input[1].ToInt()).SerializeListNode();
-        }
-
         [Fact]
         public void Q086_PartitionList()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => Partition(input[0].ToListNode<int>(), input[1].ToInt()).SerializeListNode());
         }
     }
 }

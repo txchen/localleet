@@ -52,11 +52,6 @@ namespace LocalLeet
             return result.ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(SubsetsWithDup(input[0].ToIntArray()));
-        }
-
         private bool AreIntArrayArrayEqual(string s1, string s2)
         {
             if (s1 == s2)
@@ -77,7 +72,8 @@ namespace LocalLeet
         [Fact]
         public void Q090_SubsetsII()
         {
-            TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreIntArrayArrayEqual);
+            TestHelper.Run(input => TestHelper.Serialize(SubsetsWithDup(input[0].ToIntArray())),
+                specialAssertAction: AreIntArrayArrayEqual);
         }
     }
 }

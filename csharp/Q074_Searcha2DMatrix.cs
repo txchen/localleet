@@ -77,16 +77,11 @@ namespace LocalLeet
             return false;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return SearchMatrix(input[0].ToIntArrayArray(), input[1].ToInt()).ToString()
-                .ToLower();
-        }
-
         [Fact]
         public void Q074_Searcha2DMatrix()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input =>
+                SearchMatrix(input[0].ToIntArrayArray(), input[1].ToInt()).ToString().ToLower());
         }
     }
 }

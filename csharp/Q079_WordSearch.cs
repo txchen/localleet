@@ -70,15 +70,11 @@ namespace LocalLeet
             return result;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return Exist(input[0].ToStringArray(), input[1].Deserialize()).ToString().ToLower();
-        }
-
         [Fact]
         public void Q079_WordSearch()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input =>
+                Exist(input[0].ToStringArray(), input[1].Deserialize()).ToString().ToLower());
         }
     }
 }

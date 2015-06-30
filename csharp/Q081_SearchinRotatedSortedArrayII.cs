@@ -53,15 +53,10 @@ namespace LocalLeet
             return Search(a, target, (start + end) / 2 + 1, end);
         }
 
-        public string SolveQuestion(string input)
-        {
-            return SearchRotated(input[0].ToIntArray(), input[1].ToInt()).ToString().ToLower();
-        }
-
         [Fact]
         public void Q081_SearchinRotatedSortedArrayII()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => SearchRotated(input[0].ToIntArray(), input[1].ToInt()).ToString().ToLower());
         }
     }
 }

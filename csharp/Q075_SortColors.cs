@@ -61,15 +61,10 @@ namespace LocalLeet
             return input;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(SortColors(input[0].ToIntArray()));
-        }
-
         [Fact]
         public void Q075_SortColors()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(SortColors(input[0].ToIntArray())));
         }
     }
 }

@@ -40,15 +40,10 @@ namespace LocalLeet
             return "/" + String.Join("/", stk.Select(s => s).Reverse());
         }
 
-        public string SolveQuestion(string input)
-        {
-            return "\"" + SimplifyPath(input[0].Deserialize()) + "\"";
-        }
-
         [Fact]
         public void Q071_SimplifyPath()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => "\"" + SimplifyPath(input[0].Deserialize()) + "\"");
         }
     }
 }

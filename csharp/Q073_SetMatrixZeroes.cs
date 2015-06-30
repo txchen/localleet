@@ -73,15 +73,10 @@ namespace LocalLeet
             return matrix;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(SetZeroes(input[0].ToIntArrayArray()));
-        }
-
         [Fact]
         public void Q073_SetMatrixZeroes()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(SetZeroes(input[0].ToIntArrayArray())));
         }
     }
 }

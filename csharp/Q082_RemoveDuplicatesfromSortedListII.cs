@@ -46,15 +46,10 @@ namespace LocalLeet
             return preA.Next;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return DeleteDuplicatesII(input[0].ToListNode<int>()).SerializeListNode();
-        }
-
         [Fact]
         public void Q082_RemoveDuplicatesfromSortedListII()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => DeleteDuplicatesII(input[0].ToListNode<int>()).SerializeListNode());
         }
     }
 }

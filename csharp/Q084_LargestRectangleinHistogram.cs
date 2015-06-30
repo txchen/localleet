@@ -57,15 +57,10 @@ namespace LocalLeet
             return finalAnswer;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return LargestRectangleArea(input[0].ToIntArray()).ToString();
-        }
-
         [Fact]
         public void Q084_LargestRectangleinHistogram()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => LargestRectangleArea(input[0].ToIntArray()).ToString());
         }
     }
 }

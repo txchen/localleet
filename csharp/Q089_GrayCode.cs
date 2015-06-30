@@ -34,15 +34,10 @@ namespace LocalLeet
             return answer.ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(GrayCode(input[0].ToInt()));
-        }
-
         [Fact]
         public void Q089_GrayCode()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(GrayCode(input[0].ToInt())));
         }
     }
 }
