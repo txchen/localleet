@@ -70,10 +70,5 @@ namespace LocalLeet
         {
             TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreIntArrayArrayEqual);
         }
-        [Fact]
-        public void Q078_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreIntArrayArrayEqual);
-        }
     }
 }

@@ -49,10 +49,5 @@ namespace LocalLeet
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
-        [Fact]
-        public void Q056_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
     }
 }

@@ -22,9 +22,9 @@ namespace LocalLeet
                 answer[i] = '0';
             }
             for (int i = a.Length - 1; i >= 0 ; i--)
-			{
+            {
                 answer[b.Length + i] = a[i];
-			}
+            }
             for (int j = b.Length - 1; j >= 0; j--)
             {
                 int carry = b[j] == '1' ? 1 : 0;
@@ -57,11 +57,6 @@ namespace LocalLeet
 
         [Fact]
         public void Q067_Small()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q067_Large()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
