@@ -9,6 +9,7 @@ using Xunit;
 
 // "((()))", "(()())", "(())()", "()(())", "()()()"
 
+// https://leetcode.com/problems/generate-parentheses/
 namespace LocalLeet
 {
     public class Q022

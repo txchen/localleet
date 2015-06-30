@@ -8,6 +8,7 @@ using Xunit;
 
 // The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
 
+// https://leetcode.com/problems/valid-sudoku/
 namespace LocalLeet
 {
     public class Q036

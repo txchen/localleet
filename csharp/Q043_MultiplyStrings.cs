@@ -7,6 +7,7 @@ using Xunit;
 
 // Note: The numbers can be arbitrarily large and are non-negative.
 
+// https://leetcode.com/problems/multiply-strings/
 namespace LocalLeet
 {
     public class Q043

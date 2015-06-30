@@ -15,6 +15,7 @@ using Xunit;
 
 // Note: The sequence of integers will be represented as a string.
 
+// https://leetcode.com/problems/count-and-say/
 namespace LocalLeet
 {
     public class Q038

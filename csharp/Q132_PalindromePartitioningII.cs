@@ -10,6 +10,7 @@ using Xunit;
 // For example, given s = "aab",
 // Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.
 
+// https://leetcode.com/problems/palindrome-partitioning-ii/
 namespace LocalLeet
 {
     public class Q132

@@ -5,6 +5,7 @@ using Xunit;
 
 // Implement pow(x, n).
 
+// https://leetcode.com/problems/powx-n/
 namespace LocalLeet
 {
     public class Q050

@@ -14,6 +14,7 @@ using Xunit;
 // Input: numbers={2, 7, 11, 15}, target=9
 // Output: index1=1, index2=2
 
+// https://leetcode.com/problems/two-sum/
 namespace LocalLeet
 {
     public class Q001

@@ -12,6 +12,7 @@ using Xunit;
 
 // Your function should return [1,2].
 
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 namespace LocalLeet
 {
     public class Q026

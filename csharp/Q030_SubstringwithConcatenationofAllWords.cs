@@ -14,6 +14,7 @@ using Xunit;
 // You should return the indices: [0,9].
 // (order does not matter).
 
+// https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 namespace LocalLeet
 {
     public class Q030

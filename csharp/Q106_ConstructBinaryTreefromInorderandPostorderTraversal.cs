@@ -8,6 +8,7 @@ using Xunit;
 // Note:
 // You may assume that duplicates do not exist in the tree.
 
+// https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 namespace LocalLeet
 {
     public class Q106

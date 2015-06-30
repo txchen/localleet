@@ -12,6 +12,7 @@ using Xunit;
 // A = [2,3,1,1,4], return true.
 // A = [3,2,1,0,4], return false.
 
+// https://leetcode.com/problems/jump-game/
 namespace LocalLeet
 {
     public class Q055

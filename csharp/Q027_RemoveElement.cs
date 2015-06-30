@@ -7,6 +7,7 @@ using Xunit;
 
 // The order of elements can be changed. It doesn't matter what you leave beyond the new length.
 
+// https://leetcode.com/problems/remove-element/
 namespace LocalLeet
 {
     public class Q027

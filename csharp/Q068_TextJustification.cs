@@ -32,6 +32,7 @@ using Xunit;
 //   A line other than the last line might contain only one word. What should you do in this case?
 //   In this case, that line should be left-justified.
 
+// https://leetcode.com/problems/text-justification/
 namespace LocalLeet
 {
     public class Q068

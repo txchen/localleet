@@ -16,6 +16,7 @@ using Xunit;
 //  [1,4,6,4,1]
 // ]
 
+// https://leetcode.com/problems/pascals-triangle/
 namespace LocalLeet
 {
     public class Q118

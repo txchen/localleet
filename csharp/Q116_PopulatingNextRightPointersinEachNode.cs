@@ -34,6 +34,7 @@ using Xunit;
 //      / \  / \
 //     4->5->6->7 -> NULL
 
+// https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 namespace LocalLeet
 {
     public class Q116

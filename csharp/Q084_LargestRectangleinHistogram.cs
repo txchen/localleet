@@ -13,6 +13,7 @@ using Xunit;
 // Given height = [2,1,5,6,2,3],
 // return 10.
 
+// https://leetcode.com/problems/largest-rectangle-in-histogram/
 namespace LocalLeet
 {
     public class Q084

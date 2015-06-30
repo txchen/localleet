@@ -40,6 +40,7 @@ using Xunit;
 
 // Given two strings s1 and s2 of the same length, determine if s2 is a scrambled string of s1.
 
+// https://leetcode.com/problems/scramble-string/
 namespace LocalLeet
 {
     public class Q087

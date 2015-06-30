@@ -10,6 +10,7 @@ using Xunit;
 // b = "1"
 // Return "100".
 
+// https://leetcode.com/problems/add-binary/
 namespace LocalLeet
 {
     public class Q067

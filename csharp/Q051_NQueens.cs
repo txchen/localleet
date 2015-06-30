@@ -23,6 +23,7 @@ using Xunit;
 //  ".Q.."]
 //]
 
+// https://leetcode.com/problems/n-queens/
 namespace LocalLeet
 {
     public class Q051

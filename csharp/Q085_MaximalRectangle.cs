@@ -21,6 +21,7 @@ using Xunit;
 // -------------------------                    -------------------------
 // |   | X | X | X |   |   |                    | 0 | 8 | 7 | 1 | 0 | 0 |
 
+// https://leetcode.com/problems/maximal-rectangle/
 namespace LocalLeet
 {
     public class Q085

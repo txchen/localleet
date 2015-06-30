@@ -22,6 +22,7 @@ using Xunit;
 // isMatch("ab", ".*") ? true
 // isMatch("aab", "c*a*b") ? true
 
+// https://leetcode.com/problems/regular-expression-matching/
 namespace LocalLeet
 {
     public class Q010_RegularExpressionMatching

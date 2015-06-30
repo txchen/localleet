@@ -7,6 +7,7 @@ using Xunit;
 
 // Returns a pointer to the first occurrence of needle in haystack, or null if needle is not part of haystack.
 
+// https://leetcode.com/problems/implement-strstr/
 namespace LocalLeet
 {
     public class Q028

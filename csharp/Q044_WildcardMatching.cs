@@ -20,6 +20,7 @@ using Xunit;
 // isMatch("ab", "?*") ? true
 // isMatch("aab", "c*a*b") ? false
 
+// https://leetcode.com/problems/wildcard-matching/
 namespace LocalLeet
 {
     public class Q044

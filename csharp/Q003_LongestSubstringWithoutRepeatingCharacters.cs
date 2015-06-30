@@ -7,6 +7,7 @@ using Xunit;
 // For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3.
 // For "bbbbb" the longest substring is "b", with the length of 1.
 
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/
 namespace LocalLeet
 {
     public class Q003
