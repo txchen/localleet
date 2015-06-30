@@ -17,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q057_InsertInterval
+    public class Q057
     {
         public int[][] Insert(int[][] intervals, int[] newInterval)
         {
@@ -59,7 +59,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q057_Small()
+        public void Q057_InsertInterval()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

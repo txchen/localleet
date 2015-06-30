@@ -17,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q071_SimplifyPath
+    public class Q071
     {
         public string SimplifyPath(string path)
         {
@@ -46,7 +46,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q071_Small()
+        public void Q071_SimplifyPath()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

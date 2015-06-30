@@ -18,7 +18,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q077_Combinations
+    public class Q077
     {
         public int[][] Combinations(int n, int k)
         {
@@ -48,7 +48,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q077_Small()
+        public void Q077_Combinations()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

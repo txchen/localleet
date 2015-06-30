@@ -9,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q104_MaximumDepthofBinaryTree
+    public class Q104
     {
         public int MaxDepth(BinaryTree root)
         {
@@ -26,7 +26,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q104_Small()
+        public void Q104_MaximumDepthofBinaryTree()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

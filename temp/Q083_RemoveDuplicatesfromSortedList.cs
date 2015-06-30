@@ -11,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q083_RemoveDuplicatesfromSortedList
+    public class Q083
     {
         public ListNode<int> DeleteDuplicates(ListNode<int> head)
         {
@@ -41,7 +41,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q083_Small()
+        public void Q083_RemoveDuplicatesfromSortedList()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

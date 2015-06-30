@@ -12,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q099_RecoverBinarySearchTree
+    public class Q099
     {
         public BinaryTree RecoverTree(BinaryTree root)
         {
@@ -61,7 +61,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q099_Small()
+        public void Q099_RecoverBinarySearchTree()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

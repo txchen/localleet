@@ -10,7 +10,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q064_MinimumPathSum
+    public class Q064
     {
         public int MinPathSum(int[][] grid)
         {
@@ -44,7 +44,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q064_Small()
+        public void Q064_MinimumPathSum()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

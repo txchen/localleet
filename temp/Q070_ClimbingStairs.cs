@@ -9,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q070_ClimbingStairs
+    public class Q070
     {
         public int ClimbStairs(int n)
         {
@@ -37,7 +37,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q070_Small()
+        public void Q070_ClimbingStairs()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

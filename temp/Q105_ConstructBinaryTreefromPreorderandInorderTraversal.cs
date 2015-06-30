@@ -10,7 +10,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q105_ConstructBinaryTreefromPreorderandInorderTraversal
+    public class Q105
     {
         public BinaryTree BuildTree(int[] preorder, int[] inorder)
         {
@@ -44,7 +44,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q105_Small()
+        public void Q105_ConstructBinaryTreefromPreorderandInorderTraversal()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

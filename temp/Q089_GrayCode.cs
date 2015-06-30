@@ -21,7 +21,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q089_GrayCode
+    public class Q089
     {
         public int[] GrayCode(int n)
         {
@@ -40,7 +40,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q089_Small()
+        public void Q089_GrayCode()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

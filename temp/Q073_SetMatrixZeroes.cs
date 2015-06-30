@@ -13,7 +13,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q073_SetMatrixZeroes
+    public class Q073
     {
         public int[][] SetZeroes(int[][] matrix)
         {
@@ -79,7 +79,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q073_Small()
+        public void Q073_SetMatrixZeroes()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

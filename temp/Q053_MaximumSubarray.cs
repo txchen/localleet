@@ -10,7 +10,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q053_MaximumSubarray
+    public class Q053
     {
         public int MaxSubArray(int[] input)
         {
@@ -34,7 +34,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q053_Small()
+        public void Q053_MaximumSubarray()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

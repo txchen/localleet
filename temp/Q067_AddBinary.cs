@@ -12,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q067_AddBinary
+    public class Q067
     {
         public string AddBinary(string a, string b)
         {
@@ -56,7 +56,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q067_Small()
+        public void Q067_AddBinary()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

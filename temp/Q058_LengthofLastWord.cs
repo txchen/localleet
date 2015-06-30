@@ -15,7 +15,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q058_LengthofLastWord
+    public class Q058
     {
         public int LengthOfLastWord(string input)
         {
@@ -44,7 +44,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q058_Small()
+        public void Q058_LengthofLastWord()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

@@ -14,7 +14,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q086_PartitionList
+    public class Q086
     {
         public ListNode<int> Partition(ListNode<int> head, int x)
         {
@@ -49,7 +49,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q086_Small()
+        public void Q086_PartitionList()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

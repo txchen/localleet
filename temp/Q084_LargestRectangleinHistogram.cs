@@ -15,7 +15,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q084_LargestRectangleinHistogram
+    public class Q084
     {
         public int LargestRectangleArea(int[] height)
         {
@@ -63,7 +63,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q084_Small()
+        public void Q084_LargestRectangleinHistogram()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

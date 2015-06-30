@@ -18,7 +18,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q118_PascalTriangle
+    public class Q118
     {
         public int[][] Generate(int numRows)
         {
@@ -46,7 +46,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q118_Small()
+        public void Q118_PascalTriangle()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

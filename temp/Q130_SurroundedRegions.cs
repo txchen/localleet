@@ -22,7 +22,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q130_SurroundedRegions
+    public class Q130
     {
         public string[] Solve(string[] board)
         {
@@ -97,7 +97,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q130_Small()
+        public void Q130_SurroundedRegions()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

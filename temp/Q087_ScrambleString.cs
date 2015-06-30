@@ -42,7 +42,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q087_ScrambleString
+    public class Q087
     {
         public bool IsScramble(string s1, string s2)
         {
@@ -82,7 +82,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q087_Small()
+        public void Q087_ScrambleString()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

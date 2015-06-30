@@ -12,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q082_RemoveDuplicatesfromSortedListII
+    public class Q082
     {
         public ListNode<int> DeleteDuplicatesII(ListNode<int> head)
         {
@@ -52,7 +52,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q082_Small()
+        public void Q082_RemoveDuplicatesfromSortedListII()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

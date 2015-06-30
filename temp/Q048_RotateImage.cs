@@ -12,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q048_RotateImage
+    public class Q048
     {
         public int[][] Rotate(int[][] matrix)
         {
@@ -45,7 +45,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q048_Small()
+        public void Q048_RotateImage()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

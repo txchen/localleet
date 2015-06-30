@@ -12,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q062_UniquePaths
+    public class Q062
     {
         public int UniquePaths(int m, int n)
         {
@@ -34,7 +34,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q062_Small()
+        public void Q062_UniquePaths()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

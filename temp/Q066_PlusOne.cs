@@ -7,7 +7,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q066_PlusOne
+    public class Q066
     {
         public int[] PlusOne(int[] digits)
         {
@@ -32,7 +32,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q066_Small()
+        public void Q066_PlusOne()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

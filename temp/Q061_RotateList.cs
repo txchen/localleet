@@ -11,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q061_RotateList
+    public class Q061
     {
         public ListNode<int> RotateRight(ListNode<int> head, int n)
         {
@@ -56,7 +56,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q061_Small()
+        public void Q061_RotateList()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

@@ -24,7 +24,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q078_Subsets
+    public class Q078
     {
         public int[][] Subsets(int[] input)
         {
@@ -66,7 +66,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q078_Small()
+        public void Q078_Subsets()
         {
             TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreIntArrayArrayEqual);
         }

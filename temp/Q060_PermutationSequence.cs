@@ -20,7 +20,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q060_PermutationSequence
+    public class Q060
     {
         public string GetPermutation(int n, int k)
         {
@@ -54,7 +54,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q060_Small()
+        public void Q060_PermutationSequence()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

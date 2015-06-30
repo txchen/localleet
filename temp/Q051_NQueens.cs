@@ -25,7 +25,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q051_NQueens
+    public class Q051
     {
         public string[][] SolveNQueens(int n)
         {
@@ -82,7 +82,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q051_Small()
+        public void Q051_NQueens()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

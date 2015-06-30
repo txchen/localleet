@@ -21,7 +21,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q129_SumRoottoLeafNumbers
+    public class Q129
     {
         public int SumNumbers(BinaryTree root)
         {
@@ -56,7 +56,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q129_Small()
+        public void Q129_SumRoottoLeafNumbers()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

@@ -16,7 +16,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q095_UniqueBinarySearchTreesII
+    public class Q095
     {
         public BinaryTree[] GenerateTrees(int n)
         {
@@ -55,7 +55,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q095_Small()
+        public void Q095_UniqueBinarySearchTreesII()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

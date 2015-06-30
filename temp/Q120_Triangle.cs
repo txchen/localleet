@@ -21,7 +21,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q120_Triangle
+    public class Q120
     {
         public int MinimumTotal(int[][] triangle)
         {
@@ -43,7 +43,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q120_Small()
+        public void Q120_Triangle()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

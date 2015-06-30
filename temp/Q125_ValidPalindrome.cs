@@ -16,7 +16,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q125_ValidPalindrome
+    public class Q125
     {
         public bool IsPalindrome(string s)
         {
@@ -42,7 +42,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q125_Small()
+        public void Q125_ValidPalindrome()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

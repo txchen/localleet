@@ -17,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q131_PalindromePartitioning
+    public class Q131
     {
         public string[][] Partition(string input)
         {
@@ -75,7 +75,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q131_Small()
+        public void Q131_PalindromePartitioning()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

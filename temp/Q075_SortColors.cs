@@ -19,7 +19,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q075_SortColors
+    public class Q075
     {
         public int[] SortColors(int[] input)
         {
@@ -67,7 +67,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q075_Small()
+        public void Q075_SortColors()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

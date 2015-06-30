@@ -19,7 +19,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q074_Searcha2DMatrix
+    public class Q074
     {
         public bool SearchMatrix(int[][] matrix, int target)
         {
@@ -84,7 +84,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q074_Small()
+        public void Q074_Searcha2DMatrix()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

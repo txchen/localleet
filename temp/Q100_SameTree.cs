@@ -9,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q100_SameTree
+    public class Q100
     {
         public bool IsSameTree(BinaryTree t1, BinaryTree t2)
         {
@@ -35,7 +35,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q100_Small()
+        public void Q100_SameTree()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

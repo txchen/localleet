@@ -11,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q047_PermutationsII
+    public class Q047
     {
         public int[][] PermuteUnique(int[] num)
         {
@@ -65,7 +65,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q047_Small()
+        public void Q047_PermutationsII()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

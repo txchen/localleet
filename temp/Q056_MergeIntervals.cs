@@ -11,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q056_MergeIntervals
+    public class Q056
     {
         public int[][] Merge(int[][] intervals)
         {
@@ -45,7 +45,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q056_Small()
+        public void Q056_MergeIntervals()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

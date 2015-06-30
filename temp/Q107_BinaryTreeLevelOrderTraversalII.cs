@@ -24,7 +24,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q107_BinaryTreeLevelOrderTraversalII
+    public class Q107
     {
         public int[][] LevelOrderBottomII(BinaryTree root)
         {
@@ -64,7 +64,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q107_Small()
+        public void Q107_BinaryTreeLevelOrderTraversalII()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

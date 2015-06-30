@@ -19,7 +19,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q094_BinaryTreeInorderTraversal
+    public class Q094
     {
         public int[] InorderTraversal(BinaryTree root)
         {
@@ -68,7 +68,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q094_Small()
+        public void Q094_BinaryTreeInorderTraversal()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

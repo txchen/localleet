@@ -17,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q076_MinimumWindowSubstring
+    public class Q076
     {
         public string MinWindow(string src, string target)
         {
@@ -73,7 +73,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q076_Small()
+        public void Q076_MinimumWindowSubstring()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

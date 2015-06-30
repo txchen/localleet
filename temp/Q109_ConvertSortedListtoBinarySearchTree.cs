@@ -7,7 +7,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q109_ConvertSortedListtoBinarySearchTree
+    public class Q109
     {
         public BinaryTree SortedListToBST(ListNode<int> head)
         {
@@ -48,7 +48,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q109_Small()
+        public void Q109_ConvertSortedListtoBinarySearchTree()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }

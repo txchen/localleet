@@ -17,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q065_ValidNumber
+    public class Q065
     {
         public bool IsNumber(string s)
         {
@@ -81,7 +81,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q065_Small()
+        public void Q065_ValidNumber()
         {
             TestHelper.Run(s => SolveQuestion(s));
         }
