@@ -75,15 +75,10 @@ namespace LocalLeet
             });
         }
 
-        public string SolveQuestion(string input)
-        {
-            return IsNumber(input[0].Deserialize()).ToString().ToLower();
-        }
-
         [Fact]
         public void Q065_ValidNumber()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => IsNumber(input[0].Deserialize()).ToString().ToLower());
         }
     }
 }

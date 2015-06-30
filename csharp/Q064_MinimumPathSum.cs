@@ -38,15 +38,10 @@ namespace LocalLeet
             return answers[0, 0];
         }
 
-        public string SolveQuestion(string input)
-        {
-            return MinPathSum(input[0].ToIntArrayArray()).ToString();
-        }
-
         [Fact]
         public void Q064_MinimumPathSum()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => MinPathSum(input[0].ToIntArrayArray()).ToString());
         }
     }
 }

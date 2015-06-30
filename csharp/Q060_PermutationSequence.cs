@@ -48,15 +48,10 @@ namespace LocalLeet
             return res;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return "\"" + GetPermutation(input[0].ToInt(), input[1].ToInt()) + "\"";
-        }
-
         [Fact]
         public void Q060_PermutationSequence()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => "\"" + GetPermutation(input[0].ToInt(), input[1].ToInt()) + "\"");
         }
     }
 }

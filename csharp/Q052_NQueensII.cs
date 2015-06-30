@@ -40,15 +40,10 @@ namespace LocalLeet
             return answer;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return SolveNQueensII(input[0].ToInt()).ToString();
-        }
-
         [Fact]
         public void Q052_NQueensII()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => SolveNQueensII(input[0].ToInt()).ToString());
         }
     }
 }

@@ -51,15 +51,10 @@ namespace LocalLeet
             return (int)low;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return Sqrt(input[0].ToInt()).ToString();
-        }
-
         [Fact]
         public void Q069_SqrtX()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => Sqrt(input[0].ToInt()).ToString());
         }
     }
 }

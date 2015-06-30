@@ -53,15 +53,11 @@ namespace LocalLeet
             return answer.ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(Insert(input[0].ToIntArrayArray(), input[1].ToIntArray()));
-        }
-
         [Fact]
         public void Q057_InsertInterval()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input =>
+                TestHelper.Serialize(Insert(input[0].ToIntArrayArray(), input[1].ToIntArray())));
         }
     }
 }

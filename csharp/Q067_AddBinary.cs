@@ -50,15 +50,11 @@ namespace LocalLeet
             return res;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return "\"" + AddBinary(input[0].Deserialize(), input[1].Deserialize()) + "\"";
-        }
-
         [Fact]
         public void Q067_AddBinary()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input =>
+                "\"" + AddBinary(input[0].Deserialize(), input[1].Deserialize()) + "\"");
         }
     }
 }

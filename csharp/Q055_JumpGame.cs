@@ -41,15 +41,10 @@ namespace LocalLeet
             }
         }
 
-        public string SolveQuestion(string input)
-        {
-            return CanJump(input[0].ToIntArray()).ToString().ToLower();
-        }
-
         [Fact]
         public void Q055_JumpGame()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => CanJump(input[0].ToIntArray()).ToString().ToLower());
         }
     }
 }

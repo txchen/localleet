@@ -38,15 +38,10 @@ namespace LocalLeet
             return right + 1;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return LengthOfLastWord(input[0].Deserialize()).ToString();
-        }
-
         [Fact]
         public void Q058_LengthofLastWord()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => LengthOfLastWord(input[0].Deserialize()).ToString());
         }
     }
 }

@@ -39,15 +39,10 @@ namespace LocalLeet
             return answer.ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(Merge(input[0].ToIntArrayArray()));
-        }
-
         [Fact]
         public void Q056_MergeIntervals()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(Merge(input[0].ToIntArrayArray())));
         }
     }
 }

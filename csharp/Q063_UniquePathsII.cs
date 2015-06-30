@@ -46,15 +46,10 @@ namespace LocalLeet
             return tmp[0];
         }
 
-        public string SolveQuestion(string input)
-        {
-            return UniquePathsWithObstacles(input[0].ToIntArrayArray()).ToString();
-        }
-
         [Fact]
         public void Q063_UniquePathsII()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => UniquePathsWithObstacles(input[0].ToIntArrayArray()).ToString());
         }
     }
 }

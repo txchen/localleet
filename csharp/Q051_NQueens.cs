@@ -76,15 +76,10 @@ namespace LocalLeet
             }
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(SolveNQueens(input[0].ToInt()));
-        }
-
         [Fact]
         public void Q051_NQueens()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(SolveNQueens(input[0].ToInt())));
         }
     }
 }

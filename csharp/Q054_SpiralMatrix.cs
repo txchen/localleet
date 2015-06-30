@@ -71,15 +71,10 @@ namespace LocalLeet
             return answer.ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(SpiralOrder(input[0].ToIntArrayArray()));
-        }
-
         [Fact]
         public void Q054_SpiralMatrix()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(SpiralOrder(input[0].ToIntArrayArray())));
         }
     }
 }

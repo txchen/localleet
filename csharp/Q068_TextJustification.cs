@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Xunit;
 
 // Given an array of words and a length L,
@@ -78,15 +79,11 @@ namespace LocalLeet
             words.Clear();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(FullJustify(input[0].ToStringArray(), input[1].ToInt()));
-        }
-
         [Fact]
         public void Q068_TextJustification()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input =>
+                TestHelper.Serialize(FullJustify(input[0].ToStringArray(), input[1].ToInt())));
         }
     }
 }

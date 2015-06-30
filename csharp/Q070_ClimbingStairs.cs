@@ -31,15 +31,10 @@ namespace LocalLeet
             return b;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return ClimbStairs(input[0].ToInt()).ToString();
-        }
-
         [Fact]
         public void Q070_ClimbingStairs()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => ClimbStairs(input[0].ToInt()).ToString());
         }
     }
 }

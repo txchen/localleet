@@ -61,15 +61,10 @@ namespace LocalLeet
             return answer;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(GenerateMatrix(input[0].ToInt()));
-        }
-
         [Fact]
         public void Q059_SpiralMatrixII()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(GenerateMatrix(input[0].ToInt())));
         }
     }
 }

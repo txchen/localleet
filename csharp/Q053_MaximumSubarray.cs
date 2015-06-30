@@ -28,15 +28,10 @@ namespace LocalLeet
             return answer;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return MaxSubArray(input[0].ToIntArray()).ToString();
-        }
-
         [Fact]
         public void Q053_MaximumSubarray()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => MaxSubArray(input[0].ToIntArray()).ToString());
         }
     }
 }

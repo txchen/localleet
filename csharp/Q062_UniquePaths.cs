@@ -28,15 +28,10 @@ namespace LocalLeet
             return tmp[m - 1];
         }
 
-        public string SolveQuestion(string input)
-        {
-            return UniquePaths(input[0].ToInt(), input[1].ToInt()).ToString();
-        }
-
         [Fact]
         public void Q062_UniquePaths()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => UniquePaths(input[0].ToInt(), input[1].ToInt()).ToString());
         }
     }
 }

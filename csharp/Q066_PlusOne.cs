@@ -26,15 +26,10 @@ namespace LocalLeet
             return (new int[1] { 1 }).Concat(result).ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(PlusOne(input[0].ToIntArray()));
-        }
-
         [Fact]
         public void Q066_PlusOne()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(PlusOne(input[0].ToIntArray())));
         }
     }
 }

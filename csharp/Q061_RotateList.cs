@@ -49,16 +49,14 @@ namespace LocalLeet
             return answer;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return RotateRight(input[0].ToListNode<int>(),
-                input[1].ToInt()).SerializeListNode();
-        }
-
         [Fact]
         public void Q061_RotateList()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input =>
+            {
+                return RotateRight(input[0].ToListNode<int>(),
+                    input[1].ToInt()).SerializeListNode();
+            });
         }
     }
 }
