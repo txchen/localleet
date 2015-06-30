@@ -58,7 +58,7 @@ namespace LocalLeet
         [Fact]
         public void Q061_RotateList()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

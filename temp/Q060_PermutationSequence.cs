@@ -56,7 +56,7 @@ namespace LocalLeet
         [Fact]
         public void Q060_PermutationSequence()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

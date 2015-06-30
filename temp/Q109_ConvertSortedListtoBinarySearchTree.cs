@@ -50,7 +50,7 @@ namespace LocalLeet
         [Fact]
         public void Q109_ConvertSortedListtoBinarySearchTree()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

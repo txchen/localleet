@@ -28,7 +28,7 @@ namespace LocalLeet
         [Fact]
         public void Q104_MaximumDepthofBinaryTree()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

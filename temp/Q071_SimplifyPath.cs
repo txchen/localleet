@@ -48,7 +48,7 @@ namespace LocalLeet
         [Fact]
         public void Q071_SimplifyPath()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

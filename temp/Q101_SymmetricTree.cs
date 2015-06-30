@@ -75,7 +75,7 @@ namespace LocalLeet
         [Fact]
         public void Q101_SymmetricTree()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

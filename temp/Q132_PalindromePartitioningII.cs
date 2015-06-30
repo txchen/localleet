@@ -69,7 +69,7 @@ namespace LocalLeet
         [Fact]
         public void Q132_PalindromePartitioningII()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

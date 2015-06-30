@@ -81,7 +81,7 @@ namespace LocalLeet
         [Fact]
         public void Q073_SetMatrixZeroes()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

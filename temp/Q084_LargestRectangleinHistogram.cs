@@ -65,7 +65,7 @@ namespace LocalLeet
         [Fact]
         public void Q084_LargestRectangleinHistogram()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

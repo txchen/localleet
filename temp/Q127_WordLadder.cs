@@ -80,7 +80,7 @@ namespace LocalLeet
         [Fact]
         public void Q127_WordLadder()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

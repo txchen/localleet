@@ -40,7 +40,7 @@ namespace LocalLeet
         [Fact]
         public void Q110_BalancedBinaryTree()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

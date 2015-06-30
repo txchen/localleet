@@ -34,7 +34,7 @@ namespace LocalLeet
         [Fact]
         public void Q066_PlusOne()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

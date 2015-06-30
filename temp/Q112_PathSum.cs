@@ -50,7 +50,7 @@ namespace LocalLeet
         [Fact]
         public void Q112_PathSum()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

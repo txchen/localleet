@@ -79,7 +79,7 @@ namespace LocalLeet
         [Fact]
         public void Q054_SpiralMatrix()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

@@ -51,7 +51,7 @@ namespace LocalLeet
         [Fact]
         public void Q086_PartitionList()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

@@ -44,7 +44,7 @@ namespace LocalLeet
         [Fact]
         public void Q125_ValidPalindrome()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

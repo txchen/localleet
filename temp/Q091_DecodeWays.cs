@@ -56,7 +56,7 @@ namespace LocalLeet
         [Fact]
         public void Q091_DecodeWays()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

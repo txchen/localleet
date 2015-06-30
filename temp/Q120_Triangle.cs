@@ -45,7 +45,7 @@ namespace LocalLeet
         [Fact]
         public void Q120_Triangle()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

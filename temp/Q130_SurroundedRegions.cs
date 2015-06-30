@@ -99,7 +99,7 @@ namespace LocalLeet
         [Fact]
         public void Q130_SurroundedRegions()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

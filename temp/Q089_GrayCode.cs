@@ -42,7 +42,7 @@ namespace LocalLeet
         [Fact]
         public void Q089_GrayCode()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

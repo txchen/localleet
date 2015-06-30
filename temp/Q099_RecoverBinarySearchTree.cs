@@ -63,7 +63,7 @@ namespace LocalLeet
         [Fact]
         public void Q099_RecoverBinarySearchTree()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

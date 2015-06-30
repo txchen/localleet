@@ -60,7 +60,7 @@ namespace LocalLeet
         [Fact]
         public void Q123_BestTimetoBuyandSellStockIII()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

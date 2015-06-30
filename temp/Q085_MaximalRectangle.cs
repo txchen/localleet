@@ -72,7 +72,7 @@ namespace LocalLeet
         [Fact]
         public void Q085_MaximalRectangle()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

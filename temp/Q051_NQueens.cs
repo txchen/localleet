@@ -84,7 +84,7 @@ namespace LocalLeet
         [Fact]
         public void Q051_NQueens()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

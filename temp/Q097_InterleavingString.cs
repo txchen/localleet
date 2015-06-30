@@ -59,7 +59,7 @@ namespace LocalLeet
         [Fact]
         public void Q097_InterleavingString()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

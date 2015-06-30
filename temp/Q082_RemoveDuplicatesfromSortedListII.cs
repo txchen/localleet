@@ -54,7 +54,7 @@ namespace LocalLeet
         [Fact]
         public void Q082_RemoveDuplicatesfromSortedListII()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

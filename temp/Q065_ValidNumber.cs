@@ -83,7 +83,7 @@ namespace LocalLeet
         [Fact]
         public void Q065_ValidNumber()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

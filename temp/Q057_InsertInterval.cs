@@ -61,7 +61,7 @@ namespace LocalLeet
         [Fact]
         public void Q057_InsertInterval()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

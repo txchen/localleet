@@ -36,7 +36,7 @@ namespace LocalLeet
         [Fact]
         public void Q062_UniquePaths()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

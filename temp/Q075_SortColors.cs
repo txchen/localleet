@@ -69,7 +69,7 @@ namespace LocalLeet
         [Fact]
         public void Q075_SortColors()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

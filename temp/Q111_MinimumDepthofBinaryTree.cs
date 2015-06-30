@@ -40,7 +40,7 @@ namespace LocalLeet
         [Fact]
         public void Q111_MinimumDepthofBinaryTree()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

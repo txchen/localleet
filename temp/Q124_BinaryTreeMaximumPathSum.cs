@@ -66,7 +66,7 @@ namespace LocalLeet
         [Fact]
         public void Q124_BinaryTreeMaximumPathSum()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

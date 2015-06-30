@@ -59,7 +59,7 @@ namespace LocalLeet
         [Fact]
         public void Q069_SqrtX()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

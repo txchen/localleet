@@ -84,7 +84,7 @@ namespace LocalLeet
         [Fact]
         public void Q103_BinaryTreeZigzagLevelOrderTraversal()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

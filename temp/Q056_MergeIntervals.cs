@@ -47,7 +47,7 @@ namespace LocalLeet
         [Fact]
         public void Q056_MergeIntervals()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

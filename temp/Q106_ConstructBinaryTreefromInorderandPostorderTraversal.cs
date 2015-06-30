@@ -46,7 +46,7 @@ namespace LocalLeet
         [Fact]
         public void Q106_ConstructBinaryTreefromInorderandPostorderTraversal()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

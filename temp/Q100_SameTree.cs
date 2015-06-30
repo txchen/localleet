@@ -37,7 +37,7 @@ namespace LocalLeet
         [Fact]
         public void Q100_SameTree()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

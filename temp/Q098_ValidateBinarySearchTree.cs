@@ -54,7 +54,7 @@ namespace LocalLeet
         [Fact]
         public void Q098_ValidateBinarySearchTree()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

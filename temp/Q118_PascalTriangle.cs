@@ -48,7 +48,7 @@ namespace LocalLeet
         [Fact]
         public void Q118_PascalTriangle()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

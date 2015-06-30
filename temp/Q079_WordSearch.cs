@@ -78,7 +78,7 @@ namespace LocalLeet
         [Fact]
         public void Q079_WordSearch()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

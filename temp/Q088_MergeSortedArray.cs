@@ -59,7 +59,7 @@ namespace LocalLeet
         [Fact]
         public void Q088_MergeSortedArray()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

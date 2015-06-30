@@ -58,7 +58,7 @@ namespace LocalLeet
         [Fact]
         public void Q129_SumRoottoLeafNumbers()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

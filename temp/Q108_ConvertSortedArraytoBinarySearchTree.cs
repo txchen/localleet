@@ -29,7 +29,7 @@ namespace LocalLeet
         [Fact]
         public void Q108_ConvertSortedArraytoBinarySearchTree()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

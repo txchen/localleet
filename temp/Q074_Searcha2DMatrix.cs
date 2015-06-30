@@ -86,7 +86,7 @@ namespace LocalLeet
         [Fact]
         public void Q074_Searcha2DMatrix()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

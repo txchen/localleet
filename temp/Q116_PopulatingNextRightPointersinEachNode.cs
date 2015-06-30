@@ -129,7 +129,7 @@ namespace LocalLeet
         [Fact]
         public void Q116_PopulatingNextRightPointersinEachNode()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

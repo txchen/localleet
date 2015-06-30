@@ -58,7 +58,7 @@ namespace LocalLeet
         [Fact]
         public void Q067_AddBinary()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

@@ -67,7 +67,7 @@ namespace LocalLeet
         [Fact]
         public void Q047_PermutationsII()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

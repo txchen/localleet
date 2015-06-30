@@ -86,7 +86,7 @@ namespace LocalLeet
         [Fact]
         public void Q068_TextJustification()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

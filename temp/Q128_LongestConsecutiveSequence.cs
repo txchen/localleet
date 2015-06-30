@@ -49,7 +49,7 @@ namespace LocalLeet
         [Fact]
         public void Q128_LongestConsecutiveSequence()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

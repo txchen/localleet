@@ -70,7 +70,7 @@ namespace LocalLeet
         [Fact]
         public void Q094_BinaryTreeInorderTraversal()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

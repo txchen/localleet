@@ -57,7 +57,7 @@ namespace LocalLeet
         [Fact]
         public void Q095_UniqueBinarySearchTreesII()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

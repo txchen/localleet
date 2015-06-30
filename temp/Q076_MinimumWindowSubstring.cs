@@ -75,7 +75,7 @@ namespace LocalLeet
         [Fact]
         public void Q076_MinimumWindowSubstring()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

@@ -50,7 +50,7 @@ namespace LocalLeet
         [Fact]
         public void Q077_Combinations()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

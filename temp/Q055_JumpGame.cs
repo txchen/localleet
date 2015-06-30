@@ -49,7 +49,7 @@ namespace LocalLeet
         [Fact]
         public void Q055_JumpGame()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

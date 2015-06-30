@@ -52,7 +52,7 @@ namespace LocalLeet
         [Fact]
         public void Q092_ReverseLinkedListII()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }

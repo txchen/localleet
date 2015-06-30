@@ -57,7 +57,7 @@ namespace LocalLeet
         [Fact]
         public void Q093_RestoreIPAddresses()
         {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => SolveQuestion(s));
         }
     }
 }
