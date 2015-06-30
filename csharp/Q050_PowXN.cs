@@ -42,15 +42,10 @@ namespace LocalLeet
             return answer;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return Pow(input[0].ToDouble(), input[1].ToInt()).ToString("f5");
-        }
-
         [Fact]
         public void Q050_PowXN()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => Pow(input[0].ToDouble(), input[1].ToInt()).ToString("f5"));
         }
     }
 }

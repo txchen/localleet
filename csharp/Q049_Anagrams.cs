@@ -37,11 +37,6 @@ namespace LocalLeet
             return answerIndexes.Select(i => strs[i]).ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(Anagrams(input[0].ToStringArray()));
-        }
-
         private bool AreStringsEqual(string expected, string actual)
         {
             var arrExp = expected.ToStringArray().OrderBy(s => s).ToArray();
@@ -63,7 +58,8 @@ namespace LocalLeet
         [Fact]
         public void Q049_Anagrams()
         {
-            TestHelper.Run(s => SolveQuestion(s), specialAssertAction: AreStringsEqual);
+            TestHelper.Run(input => TestHelper.Serialize(Anagrams(input[0].ToStringArray())),
+                specialAssertAction: AreStringsEqual);
         }
     }
 }

@@ -39,15 +39,10 @@ namespace LocalLeet
             return matrix;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(Rotate(input[0].ToIntArrayArray()));
-        }
-
         [Fact]
         public void Q048_RotateImage()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(Rotate(input[0].ToIntArrayArray())));
         }
     }
 }

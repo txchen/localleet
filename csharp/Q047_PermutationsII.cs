@@ -59,15 +59,10 @@ namespace LocalLeet
             return false;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(PermuteUnique(input[0].ToIntArray()));
-        }
-
         [Fact]
         public void Q047_PermutationsII()
         {
-            TestHelper.Run(input => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(PermuteUnique(input[0].ToIntArray())));
         }
     }
 }

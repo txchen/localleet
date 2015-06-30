@@ -37,7 +37,7 @@ namespace LocalLeet
         public static void Run(Func<CaseInput, string> testAction,
             [CallerMemberName] string memberName = "",
             [CallerFilePath] string sourceFilePath = "",
-            Func<CaseInput, string, bool> specialAssertAction = null)
+            Func<string, string, bool> specialAssertAction = null)
         {
             string callingFileName = Path.GetFileNameWithoutExtension(sourceFilePath);
             string callingQuestion = callingFileName.Split('_')[0];
@@ -67,7 +67,7 @@ namespace LocalLeet
                 bool casePassed = true;
                 if (specialAssertAction != null)
                 {
-                    casePassed = specialAssertAction(input, testCase.Expected);
+                    casePassed = specialAssertAction(result, testCase.Expected);
                 }
                 else
                 {
@@ -91,7 +91,7 @@ namespace LocalLeet
                 passedCount, testCases.Length, sw.ElapsedMilliseconds);
             Assert.Equal(testCases.Length, passedCount);
         }
-        
+
         public static string Serialize<T>(T input)
         {
             return JsonConvert.SerializeObject(input);
