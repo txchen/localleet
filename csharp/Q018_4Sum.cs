@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target?
 // Find all unique quadruplets in the array which gives the sum of target.
@@ -17,7 +18,7 @@ using System.Linq;
 
 namespace LocalLeet
 {
-    public class Q018_4Sum
+    public class Q018
     {
         public int[][] FourSum(int[] num, int target)
         {
@@ -56,20 +57,11 @@ namespace LocalLeet
             return answer.ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(FourSum(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()));
-        }
-
         [Fact]
-        public void Q018_Small()
+        public void Q018_4Sum()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q018_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                TestHelper.Serialize(FourSum(input[0].ToIntArray(), input[1].ToInt())));
         }
     }
 }

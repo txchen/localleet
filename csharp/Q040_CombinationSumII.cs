@@ -22,7 +22,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q040_CombinationSumII
+    public class Q040
     {
         public int[][] CombinationSum2(int[] candidates, int target)
         {
@@ -63,20 +63,11 @@ namespace LocalLeet
             return answer;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(CombinationSum2(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()));
-        }
-
         [Fact]
-        public void Q040_Small()
+        public void Q040_CombinationSumII()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q040_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                TestHelper.Serialize(CombinationSum2(input[0].ToIntArray(), input[1].ToInt())));
         }
     }
 }

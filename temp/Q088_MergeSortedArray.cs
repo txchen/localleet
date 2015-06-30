@@ -53,7 +53,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(Merge(input.GetToken(0).ToIntArray(), input.GetToken(1).ToIntArray()));
+            return TestHelper.Serialize(Merge(input[0].ToIntArray(), input[1].ToIntArray()));
         }
 
         [Fact]

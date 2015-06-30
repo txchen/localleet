@@ -22,7 +22,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q044_WildcardMatching
+    public class Q044
     {
         public bool IsMatch(string input, string pattern)
         {
@@ -81,20 +81,11 @@ namespace LocalLeet
             return pattern.Substring(pIndex).Trim('*').Length == 0;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return IsMatch(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()).ToString().ToLower();
-        }
-
         [Fact]
-        public void Q044_Small()
+        public void Q044_WildcardMatching()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q044_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                IsMatch(input[0].Deserialize(), input[1].Deserialize()).ToString().ToLower());
         }
     }
 }

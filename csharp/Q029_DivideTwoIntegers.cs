@@ -7,7 +7,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q029_DivideTwoIntegers
+    public class Q029
     {
         public int Divide(int dividend, int divisor)
         {
@@ -35,20 +35,10 @@ namespace LocalLeet
             return (int)(neg ? 0 - answer : answer);
         }
 
-        public string SolveQuestion(string input)
-        {
-            return Divide(input.GetToken(0).ToInt(), input.GetToken(1).ToInt()).ToString();
-        }
-
         [Fact]
-        public void Q029_Small()
+        public void Q029_DivideTwoIntegers()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q029_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => Divide(input[0].ToInt(), input[1].ToInt()).ToString());
         }
     }
 }

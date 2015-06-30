@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Reverse digits of an integer.
 
@@ -9,7 +10,7 @@ using System.Linq;
 
 namespace LocalLeet
 {
-    public class Q007_ReverseInteger
+    public class Q007
     {
         public int ReverseInterger(int x)
         {
@@ -25,20 +26,10 @@ namespace LocalLeet
             return isNeg ? 0 - res : res;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return ReverseInterger(input.ToInt()).ToString();
-        }
-
         [Fact]
-        public void Q007_Small()
+        public void Q007_ReverseInteger()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q007_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => ReverseInterger(input[0].ToInt()).ToString());
         }
     }
 }

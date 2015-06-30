@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Given a roman numeral, convert it to an integer.
 
@@ -8,10 +9,10 @@ using System.Linq;
 
 namespace LocalLeet
 {
-    public class Q013_RomantoInteger
+    public class Q013
     {
         static Dictionary<string, int> dict = null;
-        Q012_IntegertoRoman itr = new Q012_IntegertoRoman();
+        Q012 itr = new Q012();
         int RomanToInt(string s)
         {
             if (dict == null)
@@ -25,20 +26,10 @@ namespace LocalLeet
             return dict[s];
         }
 
-        public string SolveQuestion(string input)
-        {
-            return RomanToInt(input.Deserialize()).ToString();
-        }
-
         [Fact]
-        public void Q013_Small()
+        public void Q013_RomantoInteger()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q013_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => RomanToInt(input[0].Deserialize()).ToString());
         }
     }
 }

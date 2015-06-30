@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Given n non-negative integers a1, a2, ..., an,
 // where each represents a point at coordinate (i, ai). n vertical lines are drawn
@@ -11,7 +12,7 @@ using System.Linq;
 
 namespace LocalLeet
 {
-    public class Q011_ContainerWithMostWater
+    public class Q011
     {
         public int MaxArea(int[] height)
         {
@@ -34,20 +35,10 @@ namespace LocalLeet
             return answer;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return MaxArea(input.ToIntArray()).ToString();
-        }
-
         [Fact]
-        public void Q011_Small()
+        public void Q011_ContainerWithMostWater()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q011_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => MaxArea(input[0].ToIntArray()).ToString());
         }
     }
 }

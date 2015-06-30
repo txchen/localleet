@@ -1,12 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Write a function to find the longest common prefix string amongst an array of strings.
 
 namespace LocalLeet
 {
-    public class Q014_LongestCommonPrefix
+    public class Q014
     {
         public string LongestCommonPrefix(string[] strs)
         {
@@ -30,20 +31,11 @@ namespace LocalLeet
             return strs[0].Substring(0, answer);
         }
 
-        public string SolveQuestion(string input)
-        {
-            return "\"" + LongestCommonPrefix(input.ToStringArray()) + "\"";
-        }
-
         [Fact]
-        public void Q014_Small()
+        public void Q014_LongestCommonPrefix()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q014_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                "\"" + LongestCommonPrefix(input[0].ToStringArray()) + "\"");
         }
     }
 }

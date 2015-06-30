@@ -43,7 +43,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return NumDistinct(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()).ToString();
+            return NumDistinct(input[0].Deserialize(), input[1].Deserialize()).ToString();
         }
 
         [Fact]

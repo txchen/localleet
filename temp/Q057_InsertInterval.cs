@@ -55,7 +55,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(Insert(input.GetToken(0).ToIntArrayArray(), input.GetToken(1).ToIntArray()));
+            return TestHelper.Serialize(Insert(input[0].ToIntArrayArray(), input[1].ToIntArray()));
         }
 
         [Fact]

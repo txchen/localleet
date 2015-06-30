@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using Xunit;
 
 // The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this:
 // (you may want to display this pattern in a fixed font for better legibility)
@@ -16,7 +18,7 @@ using System.Linq;
 
 namespace LocalLeet
 {
-    public class Q006_ZigZagConversion
+    public class Q006
     {
         public string Convert(string s, int nRows)
         {
@@ -40,20 +42,11 @@ namespace LocalLeet
             return sb.ToString();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return "\"" + Convert(input.GetToken(0).Deserialize(), input.GetToken(1).ToInt()) + "\"";
-        }
-
         [Fact]
-        public void Q006_Small()
+        public void Q006_ZigZagConversion()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q006_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                "\"" + Convert(input[0].Deserialize(), input[1].ToInt()) + "\"");
         }
     }
 }

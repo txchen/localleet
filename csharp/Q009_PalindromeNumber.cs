@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Determine whether an integer is a palindrome. Do this without extra space.
 
 namespace LocalLeet
 {
-    public class Q009_PalindromeNumber
+    public class Q009
     {
         public bool IsPalindrome(int x)
         {
@@ -34,20 +35,10 @@ namespace LocalLeet
             return true;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return IsPalindrome(input.ToInt()).ToString().ToLower();
-        }
-
         [Fact]
-        public void Q009_Small()
+        public void Q009_PalindromeNumber()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q009_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => IsPalindrome(input[0].ToInt()).ToString().ToLower());
         }
     }
 }

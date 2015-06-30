@@ -79,7 +79,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return SearchMatrix(input.GetToken(0).ToIntArrayArray(), input.GetToken(1).ToInt()).ToString()
+            return SearchMatrix(input[0].ToIntArrayArray(), input[1].ToInt()).ToString()
                 .ToLower();
         }
 

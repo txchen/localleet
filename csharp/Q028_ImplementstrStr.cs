@@ -9,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q028_ImplementstrStr
+    public class Q028
     {
         public string StrStr(string haystack, string needle)
         {
@@ -40,20 +40,11 @@ namespace LocalLeet
             return null;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return StrStr(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()).SerializeString();
-        }
-
         [Fact]
-        public void Q028_Small()
+        public void Q028_ImplementstrStr()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q028_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                StrStr(input[0].Deserialize(), input[1].Deserialize()).SerializeString());
         }
     }
 }

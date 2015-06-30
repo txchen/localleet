@@ -13,7 +13,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q033_SearchinRotatedSortedArray
+    public class Q033
     {
         public int Search(int[] a, int target)
         {
@@ -59,20 +59,11 @@ namespace LocalLeet
             return -1;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return Search(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()).ToString();
-        }
-
         [Fact]
-        public void Q033_Small()
+        public void Q033_SearchinRotatedSortedArray()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q033_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                Search(input[0].ToIntArray(), input[1].ToInt()).ToString());
         }
     }
 }

@@ -44,7 +44,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return MinDistance(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()).ToString();
+            return MinDistance(input[0].Deserialize(), input[1].Deserialize()).ToString();
         }
 
         [Fact]

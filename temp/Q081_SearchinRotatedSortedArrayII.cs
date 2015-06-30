@@ -55,7 +55,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return SearchRotated(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()).ToString().ToLower();
+            return SearchRotated(input[0].ToIntArray(), input[1].ToInt()).ToString().ToLower();
         }
 
         [Fact]

@@ -12,7 +12,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q024_SwapNodesinPairs
+    public class Q024
     {
         public ListNode<int> SwapPairs(ListNode<int> head)
         {
@@ -30,20 +30,11 @@ namespace LocalLeet
             return preAnswer.Next;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return SwapPairs(input.ToListNode<int>()).SerializeListNode();
-        }
-
         [Fact]
-        public void Q024_Small()
+        public void Q024_SwapNodesinPairs()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q024_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                SwapPairs(input[0].ToListNode<int>()).SerializeListNode());
         }
     }
 }

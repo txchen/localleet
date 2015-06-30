@@ -16,7 +16,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q031_NextPermutation
+    public class Q031
     {
         public int[] NextPermutation(int[] num)
         {
@@ -54,20 +54,10 @@ namespace LocalLeet
             return num;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(NextPermutation(input.ToIntArray()));
-        }
-
         [Fact]
-        public void Q031_Small()
+        public void Q031_NextPermutation()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q031_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => TestHelper.Serialize(NextPermutation(input[0].ToIntArray())));
         }
     }
 }

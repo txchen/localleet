@@ -80,7 +80,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(FullJustify(input.GetToken(0).ToStringArray(), input.GetToken(1).ToInt()));
+            return TestHelper.Serialize(FullJustify(input[0].ToStringArray(), input[1].ToInt()));
         }
 
         [Fact]

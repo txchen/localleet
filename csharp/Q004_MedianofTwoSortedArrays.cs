@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays.
 // The overall run time complexity should be O(log (m+n)).
 
 namespace LocalLeet
 {
-    public class Q004_MedianofTwoSortedArrays
+    public class Q004
     {
         public double FindMedianSortedArrays(int[] a, int[] b)
         {
@@ -15,20 +16,11 @@ namespace LocalLeet
             return (c[c.Length / 2] + c[(c.Length - 1) / 2]) / 2.0;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return FindMedianSortedArrays(input.GetToken(0).ToIntArray(), input.GetToken(1).ToIntArray()).ToString("F5");
-        }
-
         [Fact]
-        public void Q004_Small()
+        public void Q004_MedianofTwoSortedArrays()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q004_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                FindMedianSortedArrays(input[0].ToIntArray(), input[1].ToIntArray()).ToString("F5"));
         }
     }
 }

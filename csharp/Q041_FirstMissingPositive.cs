@@ -13,7 +13,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q041_FirstMissingPositive
+    public class Q041
     {
         public int FirstMissingPositive(int[] A)
         {
@@ -46,20 +46,10 @@ namespace LocalLeet
             return A.Length + 1;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return FirstMissingPositive(input.ToIntArray()).ToString();
-        }
-
         [Fact]
-        public void Q041_Small()
+        public void Q041_FirstMissingPositive()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q041_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => FirstMissingPositive(input[0].ToIntArray()).ToString());
         }
     }
 }

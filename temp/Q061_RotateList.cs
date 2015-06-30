@@ -51,8 +51,8 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return RotateRight(input.GetToken(0).ToListNode<int>(),
-                input.GetToken(1).ToInt()).SerializeListNode();
+            return RotateRight(input[0].ToListNode<int>(),
+                input[1].ToInt()).SerializeListNode();
         }
 
         [Fact]

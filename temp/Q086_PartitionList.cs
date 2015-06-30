@@ -45,7 +45,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return Partition(input.GetToken(0).ToListNode<int>(), input.GetToken(1).ToInt()).SerializeListNode();
+            return Partition(input[0].ToListNode<int>(), input[1].ToInt()).SerializeListNode();
         }
 
         [Fact]

@@ -69,7 +69,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return "\"" + MinWindow(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()) + "\"";
+            return "\"" + MinWindow(input[0].Deserialize(), input[1].Deserialize()) + "\"";
         }
 
         [Fact]

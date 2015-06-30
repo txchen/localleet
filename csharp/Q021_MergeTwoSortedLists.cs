@@ -8,7 +8,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q021_MergeTwoSortedLists
+    public class Q021
     {
         public ListNode<int> MergeTwoLists(ListNode<int> l1, ListNode<int> l2)
         {
@@ -39,21 +39,11 @@ namespace LocalLeet
             return preAnswer.Next;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return MergeTwoLists(input.GetToken(0).ToListNode<int>(), input.GetToken(1).ToListNode<int>())
-                .SerializeListNode();
-        }
-
         [Fact]
-        public void Q021_Small()
+        public void Q021_MergeTwoSortedLists()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q021_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                MergeTwoLists(input[0].ToListNode<int>(), input[1].ToListNode<int>()).SerializeListNode());
         }
     }
 }

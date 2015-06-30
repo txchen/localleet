@@ -40,7 +40,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return BuildTree(input.GetToken(0).ToIntArray(), input.GetToken(1).ToIntArray()).SerializeBinaryTree();
+            return BuildTree(input[0].ToIntArray(), input[1].ToIntArray()).SerializeBinaryTree();
         }
 
         [Fact]

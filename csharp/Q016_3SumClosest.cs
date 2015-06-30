@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.
 // Return the sum of the three integers. You may assume that each input would have exactly one solution.
@@ -11,7 +12,7 @@ using System.Linq;
 
 namespace LocalLeet
 {
-    public class Q016_3SumClosest
+    public class Q016
     {
         public int ThreeSumClosest(int[] num, int target)
         {
@@ -47,20 +48,11 @@ namespace LocalLeet
             return answer;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return ThreeSumClosest(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()).ToString();
-        }
-
         [Fact]
-        public void Q016_Small()
+        public void Q016_3SumClosest()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q016_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                ThreeSumClosest(input[0].ToIntArray(), input[1].ToInt()).ToString());
         }
     }
 }

@@ -30,7 +30,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return IsSameTree(input.GetToken(0).ToBinaryTree(), input.GetToken(1).ToBinaryTree()).ToString()
+            return IsSameTree(input[0].ToBinaryTree(), input[1].ToBinaryTree()).ToString()
                 .ToLower();
         }
 

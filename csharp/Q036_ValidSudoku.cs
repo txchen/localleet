@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Xunit;
 
 // Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
@@ -9,7 +10,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q036_ValidSudoku
+    public class Q036
     {
         public bool IsValidSudoku(int[,] board)
         {
@@ -76,21 +77,14 @@ namespace LocalLeet
             return result;
         }
 
-        public string SolveQuestion(string input)
-        {
-            int[,] data = ParseSudokuData(input);
-            return IsValidSudoku(data).ToString().ToLower();
-        }
-
         [Fact]
-        public void Q036_Small()
+        public void Q036_ValidSudoku()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q036_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+            {
+                int[,] data = ParseSudokuData(input[0]);
+                return IsValidSudoku(data).ToString().ToLower();
+            });
         }
     }
 }

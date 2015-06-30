@@ -16,7 +16,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q035_SearchInsertPosition
+    public class Q035
     {
         public int SearchInsert(int[] input, int target)
         {
@@ -40,20 +40,11 @@ namespace LocalLeet
             return right;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(SearchInsert(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()));
-        }
-
         [Fact]
-        public void Q035_Small()
+        public void Q035_SearchInsertPosition()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q035_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                TestHelper.Serialize(SearchInsert(input[0].ToIntArray(), input[1].ToInt())));
         }
     }
 }

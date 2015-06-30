@@ -1,6 +1,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -58,6 +59,7 @@ namespace LocalLeet
             }
 
             int passedCount = 0;
+            var sw = Stopwatch.StartNew();
             foreach (var testCase in testCases)
             {
                 var input = new CaseInput(testCase.Input);
@@ -85,8 +87,14 @@ namespace LocalLeet
                     break;
                 }
             }
-            Console.WriteLine("{0} of {1} cases passed.", passedCount, testCases.Length);
+            Console.WriteLine("{0} of {1} cases passed.\tDuration: {2}ms\n",
+                passedCount, testCases.Length, sw.ElapsedMilliseconds);
             Assert.Equal(testCases.Length, passedCount);
+        }
+        
+        public static string Serialize<T>(T input)
+        {
+            return JsonConvert.SerializeObject(input);
         }
     }
 }

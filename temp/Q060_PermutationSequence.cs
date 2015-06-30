@@ -50,7 +50,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return "\"" + GetPermutation(input.GetToken(0).ToInt(), input.GetToken(1).ToInt()) + "\"";
+            return "\"" + GetPermutation(input[0].ToInt(), input[1].ToInt()) + "\"";
         }
 
         [Fact]

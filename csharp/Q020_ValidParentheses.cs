@@ -9,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q020_ValidParentheses
+    public class Q020
     {
         public bool IsValid(string s)
         {
@@ -49,20 +49,10 @@ namespace LocalLeet
             return stk.Count == 1;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return IsValid(input.Deserialize()).ToString().ToLower();
-        }
-
         [Fact]
-        public void Q020_Small()
+        public void Q020_ValidParentheses()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q020_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => IsValid(input[0].Deserialize()).ToString().ToLower());
         }
     }
 }

@@ -11,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q046_Permutations
+    public class Q046
     {
         public int[][] Permute(int[] num)
         {
@@ -59,20 +59,11 @@ namespace LocalLeet
             return false;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(Permute(input.ToIntArray()));
-        }
-
         [Fact]
-        public void Q046_Small()
+        public void Q046_Permutations()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q046_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                TestHelper.Serialize(Permute(input[0].ToIntArray())));
         }
     }
 }

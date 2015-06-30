@@ -9,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q027_RemoveElement
+    public class Q027
     {
         int[] RemoveElement(int[] a, int toRemove)
         {
@@ -24,20 +24,11 @@ namespace LocalLeet
             return a.Take(writeIndex).ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(RemoveElement(input.GetToken(0).ToIntArray(), input.GetToken(1).ToInt()));
-        }
-
         [Fact]
-        public void Q027_Small()
+        public void Q027_RemoveElement()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q027_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                TestHelper.Serialize(RemoveElement(input[0].ToIntArray(), input[1].ToInt())));
         }
     }
 }

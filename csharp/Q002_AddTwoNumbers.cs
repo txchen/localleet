@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // You are given two linked lists representing two non-negative numbers.
 // The digits are stored in reverse order and each of their nodes contain a single digit.
@@ -30,21 +31,11 @@ namespace LocalLeet
             return result.Next;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return AddTwoNumbers(input.GetToken(0).ToListNode<int>(),
-                input.GetToken(1).ToListNode<int>()).SerializeListNode();
-        }
-
         [Fact]
-        public void Q002_Small()
+        public void Q002_AddTwoNumbers()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q002_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                AddTwoNumbers(input[0].ToListNode<int>(), input[1].ToListNode<int>()).SerializeListNode());
         }
     }
 }

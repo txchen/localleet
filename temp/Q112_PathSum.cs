@@ -44,7 +44,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return HasPathSum(input.GetToken(0).ToBinaryTree(), input.GetToken(1).ToInt()).ToString().ToLower();
+            return HasPathSum(input[0].ToBinaryTree(), input[1].ToInt()).ToString().ToLower();
         }
 
         [Fact]

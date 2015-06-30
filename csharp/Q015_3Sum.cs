@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0?
 // Find all unique triplets in the array which gives the sum of zero.
@@ -16,7 +17,7 @@ using System.Linq;
 
 namespace LocalLeet
 {
-    public class Q015_3Sum
+    public class Q015
     {
         public int[][] ThreeSum(int[] num)
         {
@@ -55,21 +56,11 @@ namespace LocalLeet
             return answer.ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            var result = ThreeSum(input.ToIntArray());
-            return TestHelper.Serialize(result);
-        }
-
         [Fact]
-        public void Q015_Small()
+        public void Q015_3Sum()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q015_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                TestHelper.Serialize(ThreeSum(input[0].ToIntArray())));
         }
     }
 }

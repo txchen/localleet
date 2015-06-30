@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Given a digit string, return all possible letter combinations that the number could represent.
 
@@ -11,7 +12,7 @@ using System.Linq;
 
 namespace LocalLeet
 {
-    public class Q017_LetterCombinationsofaPhoneNumber
+    public class Q017
     {
         Dictionary<char, char[]> dict = new Dictionary<char, char[]>() {
             {'2', "abc".ToArray()},
@@ -41,20 +42,11 @@ namespace LocalLeet
             return answer.ToArray();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(LetterCombinations(input.Deserialize()));
-        }
-
         [Fact]
-        public void Q017_Small()
+        public void Q017_LetterCombinationsofaPhoneNumber()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q017_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                TestHelper.Serialize(LetterCombinations(input[0].Deserialize())));
         }
     }
 }

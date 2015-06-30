@@ -11,7 +11,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q022_GenerateParentheses
+    public class Q022
     {
         public string[] GenerateParenthesis(int n)
         {
@@ -45,20 +45,11 @@ namespace LocalLeet
             }
         }
 
-        public string SolveQuestion(string input)
-        {
-            return TestHelper.Serialize(GenerateParenthesis(input.ToInt()));
-        }
-
         [Fact]
-        public void Q022_Small()
+        public void Q022_GenerateParentheses()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q022_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                TestHelper.Serialize(GenerateParenthesis(input[0].ToInt())));
         }
     }
 }

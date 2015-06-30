@@ -44,7 +44,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(Combinations(input.GetToken(0).ToInt(), input.GetToken(1).ToInt()));
+            return TestHelper.Serialize(Combinations(input[0].ToInt(), input[1].ToInt()));
         }
 
         [Fact]

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Given a string, find the length of the longest substring without repeating characters.
 // For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3.
@@ -8,8 +9,7 @@ using System.Linq;
 
 namespace LocalLeet
 {
-
-    public class Q003_LongestSubstringWithoutRepeatingCharacters
+    public class Q003
     {
         int LengthOfLongestSubstring(string s)
         {
@@ -45,20 +45,10 @@ namespace LocalLeet
             return result;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return LengthOfLongestSubstring(input.Deserialize()).ToString();
-        }
-
         [Fact]
-        public void Q003_Small()
+        public void Q003_LongestSubstringWithoutRepeatingCharacters()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q003_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => LengthOfLongestSubstring(input[0].Deserialize()).ToString());
         }
     }
 }

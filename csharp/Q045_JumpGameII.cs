@@ -16,7 +16,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q045_JumpGameII
+    public class Q045
     {
         public int Jump(int[] input)
         {
@@ -46,20 +46,10 @@ namespace LocalLeet
             }
         }
 
-        public string SolveQuestion(string input)
-        {
-            return Jump(input.ToIntArray()).ToString();
-        }
-
         [Fact]
-        public void Q045_Small()
+        public void Q045_JumpGameII()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q045_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => Jump(input[0].ToIntArray()).ToString());
         }
     }
 }

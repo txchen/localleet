@@ -72,7 +72,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return Exist(input.GetToken(0).ToStringArray(), input.GetToken(1).Deserialize()).ToString().ToLower();
+            return Exist(input[0].ToStringArray(), input[1].Deserialize()).ToString().ToLower();
         }
 
         [Fact]

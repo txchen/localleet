@@ -7,7 +7,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q023_MergekSortedLists
+    public class Q023
     {
         public ListNode<int> MergeKLists(ListNode<int>[] lists)
         {
@@ -42,20 +42,11 @@ namespace LocalLeet
             }
         }
 
-        public string SolveQuestion(string input)
-        {
-            return MergeKLists(input.ToListNodeArray<int>()).SerializeListNode();
-        }
-
         [Fact]
-        public void Q023_Small()
+        public void Q023_MergekSortedLists()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q023_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                MergeKLists(input[0].ToListNodeArray<int>()).SerializeListNode());
         }
     }
 }

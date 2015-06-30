@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Implement atoi to convert a string to an integer.
 
 namespace LocalLeet
 {
-    public class Q008_StringtoInteger
+    public class Q008
     {
         public int Atoi(string str)
         {
@@ -47,14 +48,9 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q008_Small()
+        public void Q008_StringtoInteger()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q008_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input => Atoi(input[0].Deserialize()).ToString());
         }
     }
 }

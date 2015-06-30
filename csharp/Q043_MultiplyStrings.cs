@@ -9,7 +9,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q043_MultiplyStrings
+    public class Q043
     {
         public string Multiply(string num1, string num2)
         {
@@ -34,20 +34,11 @@ namespace LocalLeet
             return res == String.Empty ? "0" : res;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return "\"" + Multiply(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize()) + "\"";
-        }
-
         [Fact]
-        public void Q043_Small()
+        public void Q043_MultiplyStrings()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q043_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                "\"" + Multiply(input[0].Deserialize(), input[1].Deserialize()) + "\"");
         }
     }
 }

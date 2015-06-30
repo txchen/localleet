@@ -44,7 +44,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return Pow(input.GetToken(0).ToDouble(), input.GetToken(1).ToInt()).ToString("f5");
+            return Pow(input[0].ToDouble(), input[1].ToInt()).ToString("f5");
         }
 
         [Fact]

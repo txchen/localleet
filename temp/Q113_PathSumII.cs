@@ -62,7 +62,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return TestHelper.Serialize(PathSum(input.GetToken(0).ToBinaryTree(), input.GetToken(1).ToInt()));
+            return TestHelper.Serialize(PathSum(input[0].ToBinaryTree(), input[1].ToInt()));
         }
 
         [Fact]

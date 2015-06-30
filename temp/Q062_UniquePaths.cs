@@ -30,7 +30,7 @@ namespace LocalLeet
 
         public string SolveQuestion(string input)
         {
-            return UniquePaths(input.GetToken(0).ToInt(), input.GetToken(1).ToInt()).ToString();
+            return UniquePaths(input[0].ToInt(), input[1].ToInt()).ToString();
         }
 
         [Fact]

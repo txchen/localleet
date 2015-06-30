@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Given an integer, convert it to a roman numeral.
 
@@ -8,12 +9,13 @@ using System.Linq;
 
 namespace LocalLeet
 {
-    public class Q012_IntegertoRoman
+    public class Q012
     {
         string[] ones = new string[] { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
         string[] tens = new string[] { "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
         string[] hundreds = new string[] { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };
         string[] thousands = new string[] { "", "M", "MM", "MMM" };
+        
         public string IntToRoman(int num)
         {
             string result = "";
@@ -28,20 +30,11 @@ namespace LocalLeet
             return result;
         }
 
-        public string SolveQuestion(string input)
-        {
-            return "\"" + IntToRoman(input.ToInt()) + "\"";
-        }
-
         [Fact]
-        public void Q012_Small()
+        public void Q012_IntegertoRoman()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q012_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                "\"" + IntToRoman(input[0].ToInt()) + "\"");
         }
     }
 }

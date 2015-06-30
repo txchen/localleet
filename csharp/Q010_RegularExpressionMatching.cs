@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 // Implement regular expression matching with support for '.' and '*'.
 
@@ -64,21 +65,12 @@ namespace LocalLeet
             }
         }
 
-        public string SolveQuestion(string input)
-        {
-            return IsMatch(input.GetToken(0).Deserialize(), input.GetToken(1).Deserialize())
-                .ToString().ToLower();
-        }
-
         [Fact]
         public void Q010_Small()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q010_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                IsMatch(input[0].Deserialize(), input[1].Deserialize()).ToString().ToLower()
+            );
         }
     }
 }

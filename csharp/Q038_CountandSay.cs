@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Xunit;
 
 // The count-and-say sequence is the sequence of integers beginning as follows:
@@ -16,7 +17,7 @@ using Xunit;
 
 namespace LocalLeet
 {
-    public class Q038_CountandSay
+    public class Q038
     {
         public string CountAndSay(int n)
         {
@@ -47,20 +48,11 @@ namespace LocalLeet
             return sb.ToString();
         }
 
-        public string SolveQuestion(string input)
-        {
-            return "\"" + CountAndSay(input.ToInt()) + "\"";
-        }
-
         [Fact]
-        public void Q038_Small()
+        public void Q038_CountandSay()
         {
-            TestHelper.Run(s => SolveQuestion(s));
-        }
-        [Fact]
-        public void Q038_Large()
-        {
-            TestHelper.Run(s => SolveQuestion(s));
+            TestHelper.Run(input =>
+                "\"" + CountAndSay(input[0].ToInt()) + "\"");
         }
     }
 }
