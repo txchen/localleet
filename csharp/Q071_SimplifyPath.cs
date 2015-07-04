@@ -44,7 +44,7 @@ namespace LocalLeet
         [Fact]
         public void Q071_SimplifyPath()
         {
-            TestHelper.Run(input => "\"" + SimplifyPath(input[0].Deserialize()) + "\"");
+            TestHelper.Run(input => "\"" + SimplifyPath(input.EntireInput.Deserialize()) + "\"");
         }
     }
 }

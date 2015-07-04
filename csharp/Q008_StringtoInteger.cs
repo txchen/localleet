@@ -46,7 +46,7 @@ namespace LocalLeet
         [Fact]
         public void Q008_StringtoInteger()
         {
-            TestHelper.Run(input => Atoi(input[0].Deserialize()).ToString());
+            TestHelper.Run(input => Atoi(input.EntireInput.Deserialize()).ToString());
         }
     }
 }

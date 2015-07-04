@@ -40,7 +40,7 @@ namespace LocalLeet
         [Fact]
         public void Q125_ValidPalindrome()
         {
-            TestHelper.Run(input => IsPalindrome(input[0].Deserialize()).ToString().ToLower());
+            TestHelper.Run(input => IsPalindrome(input.EntireInput.Deserialize()).ToString().ToLower());
         }
     }
 }

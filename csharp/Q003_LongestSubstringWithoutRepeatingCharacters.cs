@@ -49,7 +49,7 @@ namespace LocalLeet
         [Fact]
         public void Q003_LongestSubstringWithoutRepeatingCharacters()
         {
-            TestHelper.Run(input => LengthOfLongestSubstring(input[0].Deserialize()).ToString());
+            TestHelper.Run(input => LengthOfLongestSubstring(input.EntireInput.Deserialize()).ToString());
         }
     }
 }

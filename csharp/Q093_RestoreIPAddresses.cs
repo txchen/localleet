@@ -53,7 +53,7 @@ namespace LocalLeet
         [Fact]
         public void Q093_RestoreIPAddresses()
         {
-            TestHelper.Run(input => TestHelper.Serialize(RestoreIpAddresses(input[0].Deserialize())));
+            TestHelper.Run(input => TestHelper.Serialize(RestoreIpAddresses(input.EntireInput.Deserialize())));
         }
     }
 }

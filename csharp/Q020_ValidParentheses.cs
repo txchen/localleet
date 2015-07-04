@@ -53,7 +53,7 @@ namespace LocalLeet
         [Fact]
         public void Q020_ValidParentheses()
         {
-            TestHelper.Run(input => IsValid(input[0].Deserialize()).ToString().ToLower());
+            TestHelper.Run(input => IsValid(input.EntireInput.Deserialize()).ToString().ToLower());
         }
     }
 }

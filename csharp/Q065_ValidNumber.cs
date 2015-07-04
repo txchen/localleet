@@ -79,7 +79,7 @@ namespace LocalLeet
         [Fact]
         public void Q065_ValidNumber()
         {
-            TestHelper.Run(input => IsNumber(input[0].Deserialize()).ToString().ToLower());
+            TestHelper.Run(input => IsNumber(input.EntireInput.Deserialize()).ToString().ToLower());
         }
     }
 }

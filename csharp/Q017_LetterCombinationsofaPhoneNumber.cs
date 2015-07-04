@@ -47,7 +47,7 @@ namespace LocalLeet
         public void Q017_LetterCombinationsofaPhoneNumber()
         {
             TestHelper.Run(input =>
-                TestHelper.Serialize(LetterCombinations(input[0].Deserialize())));
+                TestHelper.Serialize(LetterCombinations(input.EntireInput.Deserialize())));
         }
     }
 }

@@ -19,16 +19,21 @@ namespace LocalLeet
 
     public class CaseInput
     {
-        private string[] _inputParameters;
+        private string _s;
 
         public CaseInput(string s)
         {
-            _inputParameters = s.Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
+            _s = s;
+        }
+
+        public string EntireInput
+        {
+            get { return _s; }
         }
 
         public string this[int index]
         {
-            get { return _inputParameters[index]; }
+            get { return _s.Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries)[index]; }
         }
     }
 
@@ -80,7 +85,7 @@ namespace LocalLeet
                 }
                 else
                 {
-                    Console.WriteLine("!! case failed:");
+                    Console.WriteLine("!! case no.{0} failed:", passedCount + 1);
                     Console.WriteLine("      input: " + testCase.Input);
                     Console.WriteLine("   expected: " + testCase.Expected);
                     Console.WriteLine("     result: " + result);

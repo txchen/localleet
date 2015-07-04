@@ -42,7 +42,7 @@ namespace LocalLeet
         [Fact]
         public void Q058_LengthofLastWord()
         {
-            TestHelper.Run(input => LengthOfLastWord(input[0].Deserialize()).ToString());
+            TestHelper.Run(input => LengthOfLastWord(input.EntireInput.Deserialize()).ToString());
         }
     }
 }

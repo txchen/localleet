@@ -1751,9 +1751,9 @@
         "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.ObjectModel.dll"
       ]
     },
-    "System.Private.Uri/4.0.0-beta-23021": {
-      "serviceable": false,
-      "sha": "yYrYHWfW1FPST5UG+Qc3dTpSZh+VdSMxTt5xX7j3g7KxRwNYohHRmef3jPO2CbdvG924LIDmbUJbwPxcMDruyA==",
+    "System.Private.Uri/4.0.0-beta-23029": {
+      "serviceable": true,
+      "sha": "Om+atGLJWZrZ9gJusneIF28pD8fAqwdMd5kxFoYT5fBJDpKMMLNe5TMoe/LIoRxI7QBeXiyhGM48AIj/4AcR8A==",
       "frameworks": {
         "DNX,Version=v4.5.1": {
           "dependencies": {},
@@ -1773,8 +1773,8 @@
         }
       },
       "files": [
-        "System.Private.Uri.4.0.0-beta-23021.nupkg",
-        "System.Private.Uri.4.0.0-beta-23021.nupkg.sha512",
+        "System.Private.Uri.4.0.0-beta-23029.nupkg",
+        "System.Private.Uri.4.0.0-beta-23029.nupkg.sha512",
         "System.Private.Uri.nuspec",
         "lib/DNXCore50/System.Private.Uri.dll",
         "lib/netcore50/System.Private.Uri.dll",
@@ -1999,9 +1999,9 @@
         "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Resources.ResourceManager.dll"
       ]
     },
-    "System.Runtime/4.0.20-beta-23021": {
-      "serviceable": false,
-      "sha": "squWHPO8TzlGaVBvJ5sdO1DWg7qzUK+CXLVvESQaIl/gqtaGvi81oN2HA7F7+uYwQM2A/LpjWfREfqX8S3UnxA==",
+    "System.Runtime/4.0.20-beta-23029": {
+      "serviceable": true,
+      "sha": "UJ09bmWG8UlXR6VLHCwC0V9sjuCNxRLKHMrkc06asFsXMU2EroTTylkh/keUl634CozR5pjbAf4hcGLQwLyDfw==",
       "frameworks": {
         "DNX,Version=v4.5.1": {
           "dependencies": {},
@@ -2011,7 +2011,7 @@
         },
         "DNXCore,Version=v5.0": {
           "dependencies": {
-            "System.Private.Uri": "4.0.0-beta-23021"
+            "System.Private.Uri": "4.0.0-beta-23029"
           },
           "frameworkAssemblies": [],
           "runtimeAssemblies": [
@@ -2023,8 +2023,8 @@
         }
       },
       "files": [
-        "System.Runtime.4.0.20-beta-23021.nupkg",
-        "System.Runtime.4.0.20-beta-23021.nupkg.sha512",
+        "System.Runtime.4.0.20-beta-23029.nupkg",
+        "System.Runtime.4.0.20-beta-23029.nupkg.sha512",
         "System.Runtime.nuspec",
         "lib/DNXCore50/System.Runtime.dll",
         "lib/net46/_._",

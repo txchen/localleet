@@ -65,7 +65,7 @@ namespace LocalLeet
         [Fact]
         public void Q132_PalindromePartitioningII()
         {
-            TestHelper.Run(input => MinCut(input[0].Deserialize()).ToString());
+            TestHelper.Run(input => MinCut(input.EntireInput.Deserialize()).ToString());
         }
     }
 }

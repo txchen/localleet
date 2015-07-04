@@ -45,7 +45,7 @@ namespace LocalLeet
         public void Q005_LongestPalindromicSubstring()
         {
             TestHelper.Run(input =>
-                "\"" + LongestPalindrome(input[0].Deserialize()) + "\"");
+                "\"" + LongestPalindrome(input.EntireInput.Deserialize()) + "\"");
         }
     }
 }

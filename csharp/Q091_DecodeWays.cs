@@ -52,7 +52,7 @@ namespace LocalLeet
         [Fact]
         public void Q091_DecodeWays()
         {
-            TestHelper.Run(input => NumDecodings(input[0].Deserialize()).ToString());
+            TestHelper.Run(input => NumDecodings(input.EntireInput.Deserialize()).ToString());
         }
     }
 }

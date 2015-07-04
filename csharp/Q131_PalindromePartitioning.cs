@@ -73,7 +73,7 @@ namespace LocalLeet
         [Fact]
         public void Q131_PalindromePartitioning()
         {
-            TestHelper.Run(input => TestHelper.Serialize(Partition(input[0].Deserialize())));
+            TestHelper.Run(input => TestHelper.Serialize(Partition(input.EntireInput.Deserialize())));
         }
     }
 }

@@ -45,7 +45,7 @@ namespace LocalLeet
         [Fact]
         public void Q032_LongestValidParentheses()
         {
-            TestHelper.Run(input => LongestValidParentheses(input[0].Deserialize()).ToString());
+            TestHelper.Run(input => LongestValidParentheses(input.EntireInput.Deserialize()).ToString());
         }
     }
 }

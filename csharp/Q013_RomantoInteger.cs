@@ -30,7 +30,7 @@ namespace LocalLeet
         [Fact]
         public void Q013_RomantoInteger()
         {
-            TestHelper.Run(input => RomanToInt(input[0].Deserialize()).ToString());
+            TestHelper.Run(input => RomanToInt(input.EntireInput.Deserialize()).ToString());
         }
     }
 }
