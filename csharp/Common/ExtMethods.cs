@@ -20,6 +20,12 @@ namespace LocalLeet
             return JsonConvert.DeserializeObject<string[][]>(s);
         }
 
+        public static HashSet<string> ToStringHashSet(this string s)
+        {
+            var elements = JsonConvert.DeserializeObject<string[]>(s);
+            return new HashSet<string>(elements);
+        }
+
         public static int[] ToIntArray(this string s)
         {
             return JsonConvert.DeserializeObject<int[]>(s);
@@ -39,7 +45,7 @@ namespace LocalLeet
         {
             return double.Parse(s);
         }
-        
+
         // e.g. {3,1,#,2,#,#,4}
         public static BinaryTree ToBinaryTree(this string s)
         {
@@ -71,6 +77,22 @@ namespace LocalLeet
                 index++;
             }
             return root;
+        }
+
+        // e.g. [5,3,1,null,4,null,null,2]
+        public static BinaryTree ToBinaryTree2(this string s)
+        {
+            return s.Replace("[", "{").Replace("]", "}").Replace("null", "#").ToBinaryTree();
+        }
+
+        public static UndirectedGraphNode ToUndirectedGraphNode(this string s)
+        {
+            return UndirectedGraphNode.FromString(s);
+        }
+
+        public static RandomListNode ToRandomListNode(this string s)
+        {
+            return RandomListNode.FromString(s);
         }
 
         public static string SerializeString(this string s)
@@ -190,6 +212,16 @@ namespace LocalLeet
             string result = sb.ToString();
             int lastIndex = result.LastIndexOfAny(new[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' });
             return result.Substring(0, lastIndex + 1) + "}";
+        }
+
+        public static string SerializeUndirectedGraphNode(this UndirectedGraphNode node)
+        {
+            return UndirectedGraphNode.Serialize(node);
+        }
+
+        public static string SerializeRandomListNode(this RandomListNode node)
+        {
+            return RandomListNode.Serialize(node);
         }
 
         public static string SerializeTreeNodeWithNext(this TreeNodeWithNext root)
