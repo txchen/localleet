@@ -1,0 +1,5 @@
+[
+{"id":1,"input":"[], no cycle","expected":"no cycle"},
+{"id":2,"input":"[1], tail connects to node index 0","expected":"tail connects to node index 0"},
+{"id":3,"input":"[1], no cycle","expected":"no cycle"},
+]
