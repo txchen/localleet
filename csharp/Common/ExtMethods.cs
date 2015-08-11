@@ -135,6 +135,11 @@ namespace LocalLeet
             }
         }
 
+        public static ListNode<T> ToListNode2<T>(this string s)
+        {
+            return s.Replace("[", "{").Replace("]", "}").ToListNode<T>();
+        }
+
         public static ListNode<T>[] ToListNodeArray<T>(this string s)
         {
             // e.g [{1,2,2},{1,1,2}]
@@ -170,6 +175,11 @@ namespace LocalLeet
                 l = l.Next;
             }
             return "{" + sb.ToString().TrimEnd(',') + "}";
+        }
+
+        public static string SerializeListNode2<T>(this ListNode<T> l)
+        {
+            return l.SerializeListNode<T>().Replace("{", "[").Replace("}", "]");
         }
 
         // e.g. {3,1,#,2,#,#,4}
