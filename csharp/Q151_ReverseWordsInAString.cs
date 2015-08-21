@@ -29,7 +29,7 @@ namespace LocalLeet
         }
 
         [Fact]
-        public void Q135_Candy()
+        public void Q151_ReverseWordsInAString()
         {
             TestHelper.Run(input => "\"" + ReverseWords(input.EntireInput.Deserialize()) + "\"");
         }
