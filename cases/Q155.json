@@ -1,0 +1,5 @@
+[
+{"id":1,"input":"push(-3),getMin","expected":"[-3]"},
+{"id":2,"input":"push(-1),top,getMin","expected":"[-1,-1]"},
+{"id":3,"input":"push(-2),push(0),push(-1),getMin,top,pop,getMin","expected":"[-2,-1,-2]"},
+]

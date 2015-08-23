@@ -1,0 +1,5 @@
+[
+{"id":1,"input":"[]","expected":"false"},
+{"id":2,"input":"[0]","expected":"false"},
+{"id":3,"input":"[1]","expected":"false"},
+]

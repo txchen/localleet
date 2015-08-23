@@ -1,0 +1,5 @@
+[
+{"id":1,"input":"No intersection: [], []","expected":"No intersection"},
+{"id":2,"input":"No intersection: [1], []","expected":"No intersection"},
+{"id":3,"input":"No intersection: [], [2]","expected":"No intersection"},
+]

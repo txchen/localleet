@@ -1,0 +1,5 @@
+[
+{"id":1,"input":"empty","expected":"[true]"},
+{"id":2,"input":"push(1),empty","expected":"[false]"},
+{"id":3,"input":"push(1),top","expected":"[1]"},
+]

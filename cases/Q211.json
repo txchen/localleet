@@ -1,0 +1,5 @@
+[
+{"id":2,"input":"search(\"a\")","expected":"[false]"},
+{"id":3,"input":"addWord(\"a\"),search(\".\")","expected":"[true]"},
+{"id":4,"input":"addWord(\"a\"),search(\"a\")","expected":"[true]"},
+]
