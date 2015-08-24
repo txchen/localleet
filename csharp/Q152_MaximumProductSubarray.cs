@@ -13,12 +13,14 @@ namespace LocalLeet
 {
     public class Q152
     {
-        public int MaxProduct(int[] sums) {
+        public int MaxProduct(int[] sums)
+        {
             int answer = sums[0];
             int tempMax = sums[0];
             int tempMin = sums[0];
 
-            for (int i = 1; i < sums.Length; i++) {
+            for (int i = 1; i < sums.Length; i++)
+            {
                 int newTempMax = Math.Max(Math.Max(sums[i], sums[i] * tempMin), sums[i] * tempMax);
                 int newTempMin = Math.Min(Math.Min(sums[i], sums[i] * tempMin), sums[i] * tempMax);
                 answer = Math.Max(answer, newTempMax);
