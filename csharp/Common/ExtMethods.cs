@@ -131,7 +131,7 @@ namespace LocalLeet
             }
             else
             {
-                throw new ApplicationException("input is not a valid listnode: " + s);
+                throw new Exception("input is not a valid listnode: " + s);
             }
         }
 
@@ -161,7 +161,7 @@ namespace LocalLeet
             }
             else
             {
-                throw new ApplicationException("input is not a valid listnode array: " + s);
+                throw new Exception("input is not a valid listnode array: " + s);
             }
         }
 

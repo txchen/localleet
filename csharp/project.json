@@ -2,8 +2,8 @@
   "version": "1.0.0-*",
   "dependencies": {
     "Newtonsoft.Json": "7.0.1",
-    "xunit": "2.1.0-beta4-*",
-    "xunit.runner.dnx": "2.1.0-beta4-*"
+    "xunit": "2.1.0",
+    "xunit.runner.dnx": "2.1.0-beta6-build191"
   },
   "commands": {
     "test": "xunit.runner.dnx"
@@ -14,7 +14,6 @@
     },
     "dnxcore50": {
       "dependencies": {
-        "System.Runtime": "4.0.20-*"
       }
     }
   }
