@@ -36,6 +36,42 @@ namespace LocalLeet
             return JsonConvert.DeserializeObject<int[][]>(s);
         }
 
+        public static int[,] ToInt2DArray(this string s)
+        {
+            int[][] arrayArray = s.ToIntArrayArray();
+            if (arrayArray.Length == 0)
+            {
+                return new int[0, 0];
+            }
+            int[,] result = new int[arrayArray.Length, arrayArray[0].Length];
+            for (int r = 0; r < arrayArray.Length; r++)
+            {
+                for (int c = 0; c < arrayArray[r].Length; c++)
+                {
+                    result[r, c] = arrayArray[r][c];
+                }
+            }
+            return result;
+        }
+
+        public static char[,] ToChar2DArray(this string s)
+        {
+            string[] strArray = s.ToStringArray();
+            if (strArray.Length == 0)
+            {
+                return new char[0, 0];
+            }
+            char[,] result = new char[strArray.Length, strArray[0].Length];
+            for (int r = 0; r < strArray.Length; r++)
+            {
+                for (int c = 0; c < strArray[r].Length; c++)
+                {
+                    result[r, c] = strArray[r][c];
+                }
+            }
+            return result;
+        }
+
         public static int ToInt(this string s)
         {
             return int.Parse(s);
@@ -180,6 +216,12 @@ namespace LocalLeet
         public static string SerializeListNode2<T>(this ListNode<T> l)
         {
             return l.SerializeListNode<T>().Replace("{", "[").Replace("}", "]");
+        }
+
+        // e.g. [3,1,null,2]
+        public static string SerializeBinaryTree2(this BinaryTree root)
+        {
+            return root.SerializeBinaryTree().Replace("{", "[").Replace("}", "]").Replace("#", "null");
         }
 
         // e.g. {3,1,#,2,#,#,4}
