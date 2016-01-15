@@ -21,13 +21,13 @@ namespace LocalLeet
             string s = "|#" + String.Join("#", input.ToCharArray()) + "##"; // add some magic
             int[] dp = new int[s.Length];
             // S | # 1 # 2 # 2 # 1 # 2 # 3 # 2 # 1 # #
-            // P 0 1 2 1 2 5 2 1 4 1 2 1 6 1 2 1 2 1 0
-            // P[i] - 1 is the length of palindrome
-            int center = 0, mx = 0; // mx = i + dp[i], right edge of palindrome + 1
+            // P 0 0 1 0 1 4 1 0 3 0 1 0 5 0 1 0 1 0 0
+            // P[i] is the length of palindrome
+            int center = 0, mx = 0; // mx = i + dp[i], right edge of palindrome
             for (int i = 1; i < s.Length - 1; i++)
             {
-                dp[i] = mx <= i ? 1 : Math.Min(mx - i, dp[center - (i - center)]);
-                while (s[i + dp[i]] == s[i - dp[i]])
+                dp[i] = mx <= i ? 0 : Math.Min(mx - i, dp[center - (i - center)]);
+                while (s[i + dp[i] + 1] == s[i - dp[i] - 1])
                 {
                     dp[i]++;
                 }
@@ -37,8 +37,8 @@ namespace LocalLeet
                     center = i;
                 }
             }
-            center = Array.IndexOf(dp, dp.Max());
-            int length = dp[center] - 1;
+            int length = dp.Max();
+            center = Array.IndexOf(dp, length);
             return input.Substring((center - length) / 2, length);
         }
 
