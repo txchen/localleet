@@ -13,31 +13,58 @@ namespace LocalLeet
     {
         string LongestPalindrome(string input)
         {
+            // Manacher's Algorithm, https://en.wikipedia.org/wiki/Longest_palindromic_substring
+            if (input.Length < 2)
+            {
+                return input;
+            }
+            string s = "|#" + String.Join("#", input.ToCharArray()) + "##"; // add some magic
+            int[] dp = new int[s.Length];
+            // S | # 1 # 2 # 2 # 1 # 2 # 3 # 2 # 1 # #
+            // P 0 1 2 1 2 5 2 1 4 1 2 1 6 1 2 1 2 1 0
+            // P[i] - 1 is the length of palindrome
+            int center = 0, mx = 0; // mx = i + dp[i], right edge of palindrome + 1
+            for (int i = 1; i < s.Length - 1; i++)
+            {
+                dp[i] = mx <= i ? 1 : Math.Min(mx - i, dp[center - (i - center)]);
+                while (s[i + dp[i]] == s[i - dp[i]])
+                {
+                    dp[i]++;
+                }
+                if (i + dp[i] > mx)
+                {
+                    mx = i + dp[i];
+                    center = i;
+                }
+            }
+            center = Array.IndexOf(dp, dp.Max());
+            int length = dp[center] - 1;
+            return input.Substring((center - length) / 2, length);
+        }
+
+        string LongestPalindromeO2(string input)
+        {
             int longestLength = 0;
             int longestLeft = 0;
-            int right = 0;
-            bool[,] dp = new bool[input.Length, input.Length];
-            while (right < input.Length)
+            for (int i = 0; i < input.Length; i++)
             {
-                for (int left = 0; left <= right; left++)
+                int left = i;
+                int right = i;
+                while (right < input.Length - 1 && input[left] == input[right + 1])
                 {
-                    if (input[left] == input[right])
-                    {
-                        int length = right - left + 1;
-                        if ((length <= 3) || dp[left + 1, right - 1]) // then it is palindrome
-                        {
-                            dp[left, right] = true;
-                            if (length > longestLength)
-                            {
-                                longestLength = length;
-                                longestLeft = left;
-                            }
-                        }
-                    }
+                    right++;
                 }
-                right++;
+                while (left >= 1 && right < input.Length - 1 && input[left - 1] == input[right + 1])
+                {
+                    left--;
+                    right++;
+                }
+                if (right - left + 1 > longestLength)
+                {
+                    longestLength = right - left + 1;
+                    longestLeft = left;
+                }
             }
-            // dp[i, j] = true means input[i:j] is palindrome
             return input.Substring(longestLeft, longestLength);
         }
 
