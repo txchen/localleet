@@ -3,10 +3,12 @@
 ## csharp
 ```bash
 $ cd csharp
+# restore nuget package
+$ dotnet restore
 # to run all the tests:
-$ dnx . test
+$ dotnet test
 # To test only one class:
-$dnx . test -class LocalLeet.QXXX
+$ dotnet test -class LocalLeet.QXXX
 ```
 
 ## Puzzles:
